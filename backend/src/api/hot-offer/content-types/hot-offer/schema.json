@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hot_offers",
+  "info": {
+    "singularName": "hot-offer",
+    "pluralName": "hot-offers",
+    "displayName": "hotOffer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "lowPrice": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

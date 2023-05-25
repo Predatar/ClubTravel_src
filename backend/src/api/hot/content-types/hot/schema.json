@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hots",
+  "info": {
+    "singularName": "hot",
+    "pluralName": "hots",
+    "displayName": "hot"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qwe": {
+      "type": "string"
+    },
+    "asd": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
