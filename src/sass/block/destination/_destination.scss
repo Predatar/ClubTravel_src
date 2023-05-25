@@ -1,0 +1,119 @@
+.destination {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+        gap: 24px;
+    }
+
+    &__card {
+        width: 273px;
+        height: 372px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @media (max-width: 768px) {
+            height: 160px;
+        }
+    }
+
+    &__wrapper {
+        padding: 9px 16px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0 63px;
+        @media (max-width: 768px) {
+            padding: 12px 18px 16px;
+        }
+    }
+
+    &__place {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-text;
+    }
+
+    &__price {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-text;
+    }
+
+    &__place2,
+    &__proposals {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #808080;
+    }
+
+    &__calendar {
+        padding: 12px 16px;
+        display: flex;
+        background: #f7f7f7;
+        span {
+            margin-left: 29px;
+            font-size: 20px;
+            color: #b3b3b3;
+        }
+        @media (max-width: 768px) {
+            padding: 13px 13px 13px 20px;
+            justify-content: space-between;
+        }
+    }
+
+    &__date {
+        width: 191px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: $color-text;
+    }
+
+    &__btn {
+        margin: 22px 9px 0 16px;
+        width: 248px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-primary;
+        border-radius: 6px;
+        border: 1px solid $color-primary;
+
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            color: $color-text;
+            background: $color-white;
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 16px;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,364 @@
+@import 'base/variable';
+
+@import 'base/header';
+@import 'base/searchBar';
+
+
+body {
+  overflow-x: hidden;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -97px;
+  z-index: $z-index-2;
+
+  @media (max-width: 1100px) {
+      padding: 0 10px;
+  }
+  @media (max-width: 866px) {
+      padding: 0;
+  }
+  @media (max-width: 425px) {
+      top: 0;
+  }
+}
+
+.main{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -97px;
+    z-index: $z-index-2;
+
+    @media (max-width: 1100px) {
+        padding: 0 10px;
+    }
+    @media (max-width: 866px) {
+        padding: 0;
+    }
+    @media (max-width: 425px) {
+        top: 0;
+    }
+    .icon-fast-time{
+        margin-right: 6px;
+        font-size: 25px;
+        color: $color-primary-dark;
+    }
+    
+}
+
+.hotDeals{
+    margin-left: calc(93px * 100% / 1366px);
+    margin-right: calc(103px * 100% / 1366px);
+    width: calc(1170px * 100% / 1366px);
+    top: 100%;
+    
+    &__date__text,
+    &__direction__text,
+    &__duration__text,
+    &__price__text,
+    &__opens__text{
+        font-family: Open Sans;
+        font-size: 15px;
+        font-weight: 400; 
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        border-bottom: 1px solid #0000002b;
+        padding:  30px 0px 20px 0px;
+        // opacity: 0.1;
+    }
+    p {
+        font-family: Open Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .price{
+        font-weight: bold;
+    }
+        .hotDeals__wrapper {
+          .hotDeals__field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            
+            .hotDeals__date,
+            .hotDeals__direction1,
+            .hotDeals__direction2,
+            .hotDeals__duration,
+            .hotDeals__price,
+            .hotDeals__opens
+             {
+              margin: 0;
+              padding: 0;
+              vertical-align: middle;
+            }
+
+            .hotDeals__date {
+              flex-grow: 1;
+              text-align: left;
+              font-family: Open Sans;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
+              
+
+              
+              .hotDeals__date-title {
+                margin-right: 10px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                display: flex;
+                align-items: center;
+              }
+              .icon-drop-down {
+                margin-left: 10px;
+                color: $color-primary;
+              }
+            
+                
+            
+            }
+            
+            .hotDeals__direction1,
+            .hotDeals__direction2 {
+              flex-grow: 1;
+              text-align: center;
+              
+              .hotDeals__direction-title,.hotDeals__direction2-title {
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+              }
+            }
+            
+            .hotDeals__duration {
+              flex-grow: 1;
+              text-align: center;
+              
+              .hotDeals__duration-title {
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+              }
+            }
+            
+            .hotDeals__price {
+              flex-grow: 1;
+              text-align: right;
+              
+              .hotDeals__price-title {
+                margin-left: 10px;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+              }
+            }
+            .hotDeals__opens{  
+              flex-grow: 1;          
+              text-align: right;
+              
+            }
+            .hotDeals__opens-title{
+              margin-left: 10px;
+              font-family: Open Sans;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 19px;
+              letter-spacing: 0;
+              text-align: left;
+              // padding-top: 5px;
+              color: #FFFFFF;
+            }
+            .hotDeals__opens__text {
+              color: $color-primary;
+            }
+            .button {
+              cursor: pointer;
+              border: none;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              letter-spacing: 0.05em;
+              text-decoration-line: underline;
+              text-transform: uppercase;
+              font-family: 'Open Sans';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              position: relative;
+              background-color: white;
+              color: $color-primary;
+              &:hover {
+                color:$color-primary-dark; 
+              }
+            }
+              .button.active {
+                color: black; // Новый цвет кнопки
+              }
+             
+            }
+          }
+        }
+        .option1 {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+        
+        .option1 p {
+          margin-right: 10px; 
+          flex-grow: 1;
+        }
+        
+        .hidden {
+          display: none;
+        }
+
+        .hotDeals__details  {
+          // display: flex;
+          .hotDeals__items {
+            display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          flex-grow: 1; 
+          }
+        
+          .hotDeals__field-title {
+            text-align: center;
+            flex-grow: 1; 
+            text-align: left;
+          }
+        
+          .hotDeals__field-values {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+          }
+        
+          .hotDeals__field-values p {
+            margin-bottom: 5px;
+            margin: 0 10px;
+            white-space: nowrap;
+          }
+        
+          .hotDeals__field-values .button.selectButton {
+            margin-top: 10px;
+            margin: 0 10px;
+          }
+        }
+        
+        
+
+@import 'base/request';
+@import 'base/footer';
+
+// .hotDeals{
+//   margin-left: calc(93px * 100% / 1366px);
+//   margin-right: calc(103px * 100% / 1366px);
+//   width: calc(1170px * 100% / 1366px);
+//   top: 100%;
+// }
+// .hotDeals__header {
+//   /* Стилизация заголовков */
+              
+//               display: flex;
+//               flex-direction: row;
+//               align-items: flex-start;
+//               justify-content: flex-start;
+//               flex-wrap: wrap;
+//               flex-grow: 1; 
+// }
+
+// .hotDeals__item {
+//   /* Стилизация элементов списка туров */
+// }
+
+// .hotDeals__item-header {
+//   /* Стилизация заголовков дополнительных данных */
+// }
+
+// .hotDeals__item-details {
+//   /* Стилизация дополнительных данных */
+// }
+
+// .toggleButton {
+//   /* Стилизация кнопки раскрытия/скрытия данных */
+// }
+
+// .hotDeals__list {
+//   margin-top: 20px;
+// }
+
+// .hotDeals__item {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 10px;
+//   background-color: #f0f0f0;
+//   margin-bottom: 10px;
+// }
+
+// .hotDeals__item-header,
+// .hotDeals__item-data {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// }
+
+// .hotDeals__item-title {
+//   font-weight: bold;
+//   margin-right: 20px;
+// }
+
+// .hotDeals__item-value {
+//   margin-right: 20px;
+// }
+
+// .button {
+//   padding: 10px 20px;
+//   background-color: #009688;
+//   color: white;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .hidden {
+//   display: none;
+// }

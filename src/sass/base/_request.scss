@@ -1,0 +1,263 @@
+.request {
+    padding: 80px 0 94px;
+    background: url('@img/request/request-bg.png') center center/cover no-repeat,
+        linear-gradient(0deg, rgba(8, 44, 99, 0.8), rgba(8, 44, 99, 0.8));
+
+    @media (max-width: 1100px) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    @media (max-width: 866px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (max-width: 425px) {
+        padding: 31px 0 45px;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+        @media (max-width: 425px) {
+            margin: 0 auto;
+            width: 60%;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 16px;
+        padding-right: 12px;
+        width: 592px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $color-white;
+        @media (max-width: 768px) {
+            padding: 0 10px;
+        }
+        @media (max-width: 593px) {
+            width: 100%;
+        }
+        @media (max-width: 425px) {
+            margin-top: 24px;
+        }
+    }
+
+    &__container {
+        margin: 0 126px 0 auto;
+        margin-top: 94px;
+        padding-left: 1px;
+        width: calc(1036px * 100% / 1366px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1142px) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1036px;
+        }
+        @media (max-width: 1044px) {
+            width: auto;
+            flex-direction: column;
+        }
+        @media (max-width: 425px) {
+            margin-top: 32px;
+            padding-left: 8px;
+        }
+    }
+
+    &__redirect {
+        padding: 0 3px;
+    }
+
+    &__redirect-title {
+        padding-right: 5px;
+        width: 380px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-white;
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+
+    &__redirect-link {
+        margin-top: 36px;
+        width: 378px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        background: $color-primary;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+        @media (max-width: 425px) {
+            width: 99%;
+        }
+    }
+
+    &__divider {
+        margin-right: 10px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-white;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            width: 1px;
+            height: 77px;
+            background: $color-white;
+            opacity: 0.5;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::before {
+            top: 30px;
+        }
+        &::after {
+            bottom: 30px;
+        }
+        @media (max-width: 1044px) {
+            padding: 32px 0;
+            &::before,
+            &::after {
+                width: 77px;
+                height: 1px;
+                top: 50%;
+                transform: translateY(-50%) translateX(0);
+            }
+            &::before {
+                left: -85px;
+            }
+            &::after {
+                left: 34px;
+            }
+        }
+        @media (max-width: 425px) {
+            margin-right: 3px;
+        }
+    }
+
+    &__contacts {
+        width: 449px;
+        @media (max-width: 520px) {
+            padding-left: 20px;
+            width: 100%;
+        }
+    }
+
+    &__contacts-title {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white;
+    }
+
+    &__contacts-wrapper {
+        margin-top: 17px;
+        width: 449px;
+        height: 165px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0 25px;
+
+        @media (max-width: 520px) {
+            width: auto;
+            height: auto;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__contacts-img {
+        width: 207px;
+        height: 152px;
+        @media (max-width: 520px) {
+            width: 270px;
+            height: 181px;
+        }
+    }
+
+    &__contacts-name {
+        margin-top: -7px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: $color-white;
+        @media (max-width: 520px) {
+            margin-top: 16px;
+        }
+    }
+
+    &__contacts-job {
+        margin-top: 4px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-white;
+    }
+
+    &__contacts-tel,
+    &__contacts-mail,
+    &__contacts-messenger {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-white;
+        span {
+            margin-right: 14px;
+            font-size: 18px;
+            opacity: 0.5;
+        }
+    }
+
+    &__contacts-tel {
+        @media (max-width: 425px) {
+            margin-top: 24px;
+        }
+    }
+
+    &__contacts-mail {
+        margin-top: 9px;
+        @media (max-width: 425px) {
+            margin-top: 18px;
+        }
+    }
+
+    &__contacts-messenger {
+        margin-top: 9px;
+        @media (max-width: 425px) {
+            margin-top: 18px;
+        }
+    }
+}

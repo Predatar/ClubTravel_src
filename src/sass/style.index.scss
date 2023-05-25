@@ -1,0 +1,45 @@
+@import 'base/variable';
+
+@import 'base/header';
+@import 'base/searchBar';
+
+body {
+    overflow-x: hidden;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -97px;
+    z-index: $z-index-2;
+
+    @media (max-width: 1100px) {
+        padding: 0 10px;
+    }
+    @media (max-width: 866px) {
+        padding: 0;
+    }
+    @media (max-width: 425px) {
+        top: 0;
+    }
+}
+
+@import 'block/main/news';
+@import 'block/main/hotOffer';
+@import 'block/main/winter';
+@import 'block/main/summer';
+
+@import 'base/request';
+@import 'base/footer';
+
+.footer {
+    margin-top: -18px;
+    border-top: none;
+    &__container {
+        padding-top: 0;
+    }
+    @media (max-width: 425px) {
+        margin-top: 20px;   
+    }
+}

@@ -1,0 +1,31 @@
+@import 'base/variable';
+
+@import 'base/header';
+@import 'base/searchBar';
+
+body {
+    overflow-x: hidden;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -97px;
+    z-index: $z-index-2;
+
+    @media (max-width: 1100px) {
+        padding: 0 10px;
+    }
+    @media (max-width: 866px) {
+        padding: 0;
+    }
+    @media (max-width: 425px) {
+        top: 0;
+    }
+}
+
+@import 'block/search/search';
+@import 'block/search/hotel';
+@import 'base/request';
+@import 'base/footer';

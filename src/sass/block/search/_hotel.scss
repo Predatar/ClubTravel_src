@@ -1,0 +1,309 @@
+.hotel {
+    &__wrapper1 {
+        margin-bottom: 20px;
+        display: flex;
+
+        &_active {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1367px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__img {
+        width: 380px;
+        height: 250px;
+    }
+
+    &__profile {
+        margin-left: 41px;
+    }
+
+    &__name {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-text;
+    }
+
+    &__place {
+        margin-top: 12px;
+        padding: 5px 10px 3px 10px;
+        width: 214px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-text;
+        span {
+            color: $color-secondary-light;
+            opacity: 0.5;
+        }
+    }
+
+    &__descr {
+        margin-top: 16px;
+        width: 294px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-link-gray-2;
+    }
+
+    &__link {
+        margin-top: 40px;
+        margin-left: 8px;
+        display: flex;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-link-gray-1;
+        span {
+            margin-left: 8px;
+            font-size: 20px;
+            color: $color-primary;
+        }
+    }
+
+    &__review {
+        margin-top: 9px;
+        margin-left: 41px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__stars {
+        width: 62px;
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $color-star;
+        }
+    }
+
+    &__days,
+    &__eat,
+    &__apartments,
+    &__location {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-text;
+        span {
+            margin-right: 18px;
+            font-size: 18px;
+            color: $color-secondary-light;
+            opacity: 0.5;
+        }
+    }
+    &__apartments {
+        span {
+            font-size: 15px;
+        }
+    }
+
+    &__card {
+        margin-left: 31px;
+        padding: 52px 21px 20px 19px;
+        width: 200px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        &_active {
+            height: 271px;
+            background: #f4f6fa;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+
+    &__card-title {
+        padding: 0 7px 0 11px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-text;
+        div {
+            margin-top: 5px;
+            span {
+                padding-left: 1px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__card-btn {
+        margin-top: 76px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-primary;
+        border: 1px solid $color-primary;
+        border-radius: 6px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover {
+            background: $color-white;
+            color: $color-text;
+        }
+
+        &_active {
+            background: $color-white;
+            color: $color-text;
+
+            &:hover {
+                background: $color-primary;
+                color: $color-white;
+            }
+        }
+    }
+
+    &__wrapper2 {
+        margin-right: 20px;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+
+    &__table {
+        padding: 18px 20px 10px 24px;
+        background: #f4f6fa;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 0px 10px 10px;
+    }
+
+    &__head {
+        display: flex;
+    }
+
+    &__head-cell {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-link-gray-2;
+        span {
+            margin-left: 12px;
+            font-size: 12px;
+            color: $color-primary;
+        }
+        &:nth-child(1) {
+            padding-left: 4px;
+            padding-right: 150px;
+        }
+        &:nth-child(2) {
+            padding-right: 60px;
+        }
+        &:nth-child(3) {
+            padding-right: 85px;
+        }
+        &:nth-child(4) {
+            padding-right: 61px;
+        }
+        &:nth-child(5) {
+            padding-right: 70px;
+        }
+    }
+
+    &__body {
+        margin-top: 12px;
+    }
+
+    &__body-row {
+        padding: 12px 0 12px 2px;
+        display: flex;
+        border-bottom: 1px solid #e2e2e2;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__body-cell {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-text;
+
+        &_hide {
+            display: none;
+        }
+
+        &:nth-child(1) {
+            padding-left: 2px;
+            padding-right: 76px;
+        }
+        &:nth-child(2) {
+            padding-right: 74px;
+        }
+        &:nth-child(3) {
+            padding-right: 73px;
+        }
+        &:nth-child(4) {
+            padding-right: 74px;
+        }
+        &:nth-child(5) {
+            padding-right: 154px;
+        }
+        &:nth-child(6) {
+            padding-right: 88px;
+        }
+    }
+
+    &__body-btn {
+        width: 160px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: $color-primary;
+        border-radius: 6px;
+        border: 1px solid $color-primary;
+
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+
+        transition: all 0.2s;
+
+        &:hover {
+            background: $color-white;
+            color: $color-text;
+        }
+    }
+}

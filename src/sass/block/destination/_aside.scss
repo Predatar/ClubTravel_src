@@ -1,0 +1,89 @@
+.aside {
+    width: 215px;
+
+    @media (max-width: 768px) {
+        width: 318px;
+    }
+
+    &__title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-text;
+
+        @media (max-width: 768px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0;
+            text-transform: capitalize;
+        }
+    }
+
+    &__checkfield {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-black;
+        cursor: pointer;
+
+        span {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+            background: $color-white;
+            border-radius: 4px;
+            border: 2px solid #b5b5b5;
+            color: $color-white;
+            transition: all 0.2s;
+            font-size: 12px;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &_active {
+            span {
+                background: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+
+        @media (max-width: 768px) {
+            justify-content: space-between;
+        }
+    }
+}
+
+.icon-check1 {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.icon-check2 {
+    margin-right: 0 !important;
+    display: none;
+    @media (max-width: 768px) {
+        display: inline;
+    }
+}

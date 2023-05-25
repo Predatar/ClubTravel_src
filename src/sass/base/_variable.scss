@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+// COLOR
+
+$color-primary: #f68521;
+$color-primary-dark: #f15d28;
+$color-secondary: #13882d;
+$color-secondary-light: #3e7739;
+$color-link-blue: #255296;
+$color-link-gray-1: #555555;
+$color-link-gray-2: #666666;
+$color-link-gray-light: #888888;
+$color-link-gray-dark: #999999;
+$color-text: #222222;
+$color-star: #f5c213;
+$color-star-light: #ffe489;
+$color-check: #cecece;
+$color-check-active: #13882d;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Z-INDEX
+
+$z-index--1: -1; // Для элементов под потоком
+$z-index-1: 1; // Для наползающих элементов в общем потоке
+$z-index-2: 2; // Для наползающих элементов в общем потоке
+$z-index-3: 3; // Для масок
+$z-index-4: 4; // Для сайдбара
+$z-index-5: 5; // Для модалок
+$z-index-6: 6; // Элементы перекрывающие всё

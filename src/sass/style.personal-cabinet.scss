@@ -1,0 +1,23 @@
+@import 'base/variable';
+
+@import 'base/header';
+.main {
+    padding-bottom: 100px;
+}
+.wave {
+    width: 100%;
+    height: 58px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    img {
+        object-fit: fill;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+@import 'block/personal-cabinet/persona';
+@import 'block/personal-cabinet/orders';
+
+@import 'base/footer';

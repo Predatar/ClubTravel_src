@@ -1,0 +1,73 @@
+.hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .gallery {
+    width: 500px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .info {
+    text-align: center;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+  
+//////
+/// 
+.tab1{
+ display: none;
+  width: 400px;
+  
+  h2 {  }
+  
+  p {
+ 
+  }
+}
+.tab3,.tab2 {
+  display: none;
+}
+input{
+  top: 52px;
+  left: -529px;
+  height: 35px;
+}
+button {
+  top: 10px;
+  right: -170px;
+  background-color: #f68521;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #e5701d; 
+}
+
+button:hover {
+  background-color: #e5701d; 
+}
+
+.custom-button {
+  color: #fff; 
+}
+////
