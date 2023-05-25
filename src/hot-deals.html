@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горящие предложения - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.nouislider.min.css">
+    <link rel="stylesheet" href="css/style.hot-deals.min.css">
+
+</head>
+
+<body data-page="index">
+    @@include('html/header-middle.html', {})
+    <main class="main">
+        @@include('html/search-bar.html', {title: '<span class="icon-fast-time"></span>Горящие предложения'})
+        <div class="hotDeals">
+            <div class="hotDeals__wrapper">
+                <div class="hotDeals__field">
+                    <div class="hotDeals__date">
+                        <div class="hotDeals__date-title">
+                            Дата
+                            <span class="icon-drop-down"></span>
+                        </div>
+                    </div>
+                    <div class="hotDeals__direction1">
+                        <div class="hotDeals__direction-title">
+                            Откуда
+                        </div>
+                    </div>
+                    <div class="hotDeals__direction2">
+                        <div class="hotDeals__direction2-title">
+                            Куда
+                        </div>
+                    </div>
+                    <div class="hotDeals__duration">
+                        <div class="hotDeals__duration-title">
+                            Длительность 
+                        </div>
+                    </div>
+                    <div class="hotDeals__price">
+                        <div class="hotDeals__price-title">
+                            Цена
+                        </div>
+                    </div>
+                    </div>
+                
+                <div class="options">
+                    <div class="option1">
+                        <p>25 июня 2020</p>
+                        <p>Хельсинки</p>
+                        <p>Rethymnon, Kreeta</p>
+                        <p>7 дней</p>
+                        <p>от <span class="price">480€</span>/чел</p>
+                        <button class="button" id="toggleButton" type="button">ОТКРЫТЬ</button>
+                    </div>
+                  </div>
+                  <div class="hotDeals__details hidden">
+                    <div class="hotDeals__items">
+                      <div class="hotDeals__field-title">
+                        Отель
+                      </div>
+                      <div class="hotDeals__field-title">
+                        Категория
+                      </div>
+                      <div class="hotDeals__field-title">
+                        Питание
+                      </div>
+                      <div class="hotDeals__field-title">
+                        Состав тура
+                      </div>
+                      <div class="hotDeals__field-title">
+                        Цена
+                      </div>
+                  </div>
+        
+                          <div class="hotDeals__field-values">
+                            <p>Марилиана, Платанья</p>
+                            <p>4</p>
+                            <p>Завтраки</p>
+                            <p>Только перелёт</p>
+                            <p>5грн</p>
+                            <button class="button selectButton">ВЫБРАТЬ</button>
+                          </div>
+        
+                          <div class="hotDeals__field-values">
+                            <p>Марилиана, Платанья</p>
+                            <p>4</p>
+                            <p>Завтраки</p>
+                            <p>Только перелёт</p>
+                            <p>5грн</p>
+                            <button class="button selectButton" id="selectButton">ВЫБРАТЬ</button>
+                          </div>   
+                          
+                          
+                  </div>
+                      
+                    </div>
+                  </div>
+
+
+                  <a href="hotel.html">Перейти на страницу отеля</a>
+    </main>
+
+    @@include('html/request.html', {})
+    @@include('html/footer.html', {})
+    <script src="js/script.header.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.searchBar.js"></script>
+    <script src="js/script.hot-deals.js"></script>
+</body>
+
+</html>    

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.nouislider.min.css">
+    <link rel="stylesheet" href="css/style.index.min.css">
+
+</head>
+
+<body data-page="index">
+    @@include('html/header-max.html', {})
+    <main class="main">
+        @@include('html/search-bar.html', {title: 'Найти тур'})
+        <section class="news">
+            <div class="news__title">
+                <span class="icon-offer"></span>
+                <span>кампании</span>
+                и Новости
+            </div>
+            <div class="news__subtitle">
+                Кто действует быстро - получает самые вкусные цены
+                <img src="@icons/smile.svg" alt="smile">
+            </div>
+            <div class="news__wrapper">
+                <div class="swiper news__swiper">
+                    <div class="swiper-wrapper news__swiper-wrapper">
+                    </div>
+                </div>
+                <div class="swiper-button-prev news__btn-prev">
+                    <span class="icon-chevron-down"></span>
+                </div>
+                <div class="swiper-button-next news__btn-next">
+                    <span class="icon-chevron-down"></span>
+                </div>
+            </div>
+            <a href="#" class="news__link">
+                Все кампании и новости
+                <span class="icon-arrow-right"></span>
+            </a>
+        </section>
+        <section class="hot-offer">
+            <div class="hot-offer__title">
+                <span class="icon-fast-time"></span>
+                горящие предложения
+            </div>
+            <div class="hot-offer__subtitle">
+                Кто действует быстро - получает самые вкусные цены
+                <img src="@icons/smile.svg" alt="smile">
+            </div>
+            <div class="hot-offer__wrapper">
+                <div class="swiper hot-offer__swiper">
+                    <div class="swiper-wrapper hot-offer__swiper-wrapper">
+                    </div>
+                </div>
+                <div class="swiper-button-prev hot-offer__btn-prev">
+                    <span class="icon-chevron-down"></span>
+                </div>
+                <div class="swiper-button-next hot-offer__btn-next">
+                    <span class="icon-chevron-down"></span>
+                </div>
+            </div>
+            <a href="#" class="hot-offer__link">
+                Все горящие предложения
+                <span class="icon-arrow-right"></span>
+            </a>
+        </section>
+        <section class="winter">
+            <div class="winter__title">
+                Зимние туры
+            </div>
+            <div class="winter__subtitle">
+                Зима 2019 - 2020
+            </div>
+            <div class="winter__wrapper">
+                <div class="swiper winter__swiper">
+                    <div class="swiper-wrapper winter__swiper-wrapper">
+                    </div>
+                </div>
+                <div class="swiper-button-prev winter__btn-prev">
+                    <span class="icon-chevron-down"></span>
+                </div>
+                <div class="swiper-button-next winter__btn-next">
+                    <span class="icon-chevron-down"></span>
+                </div>
+            </div>
+            <a href="#" class="winter__link">
+                Все зимние туры
+                <span class="icon-arrow-right"></span>
+            </a>
+        </section>
+        <section class="summer">
+            <div class="summer__title">
+                летние ТУРЫ
+            </div>
+            <div class="summer__subtitle">
+                Лето 2019 - 2020
+            </div>
+            <div class="summer__wrapper">
+                <div class="swiper summer__swiper">
+                    <div class="swiper-wrapper summer__swiper-wrapper">
+                    </div>
+                </div>
+                <div class="swiper-button-prev summer__btn-prev">
+                    <span class="icon-chevron-down"></span>
+                </div>
+                <div class="swiper-button-next summer__btn-next">
+                    <span class="icon-chevron-down"></span>
+                </div>
+            </div>
+            <a href="#" class="summer__link">
+                Все летние туры
+                <span class="icon-arrow-right"></span>
+            </a>
+        </section>
+        
+        @@include('html/request.html', {})
+    </main>
+
+    @@include('html/footer.html', {})
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.header.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.searchBar.js"></script>
+    <script src="js/dao.js"></script>
+    <script src="js/script.index.js"></script>
+</body>
+
+</html>

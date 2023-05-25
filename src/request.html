@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запрос тура - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.nouislider.min.css">
+    <link rel="stylesheet" href="css/style.request.min.css">
+
+</head>
+
+<body data-page="index">
+    @@include('html/header-middle.html', {})
+    <div class="container">
+      <div class="data-block">
+                <div class="col-lg-6">
+                  <div class="contact-form">
+                    <h2>Нет времени искать тур?</h2>
+                    <p class="p1">Просто скажите нам как должен выглядеть отдых вашей  мечты и мы найдём лучший тур для вас!</p>
+                    <p class="p2">Заполните короткую форму запроса на нашем сайте и мы свяжемся с вами в течении 1 часа в рабочее время</p>
+
+                      <div class="form-group">
+                      <div class="recol">Оставьте свой номер телефона и мы вам перезвоним</div>
+                      </div>
+                      <div class="input-group">
+                        <input type="tel" class="form-control" placeholder="Ваш номер телефона">
+                      <button type="submit" class="btn btn-primary custom-button">Перезвонить</button>
+                  </div>
+                  <a href="#tourForm" class="fill-form-button">ЗАПОЛНИТЬ ФОРМУ</a>
+                  </div>
+                  
+                </div> 
+                
+                <div class="col-lg-6">
+                  <div class="consultant">
+                    <div class="consultant__text">
+                      <p4>Свяжитесь с нашим консультантом</p4>
+                      <p5>Марина Каасик</p5>
+                      <p6>Специалист по подбору туров</p6>
+                    </div>
+                    <div class="consultant__photo">
+                    </div>
+                    <div class="consultant__contact">
+                      <p2 class="contact-phone"><span class="icon-phone"></span>+372 6 130 633</p2>
+                      <p2><span class="icon-mail"></span>contact@email.ee</p2>
+                      <p2><span class="icon-messanger"></span>Написать в Messenger</p2>
+                    </div>
+            </div>
+                </div>       
+      </div>
+    <div class="contact-forms">
+    <form id="tourForm" action="#" method="get">
+      <div class="tabs">
+        <p class="tab-title active" data-tab="base" onclick="showTab('base')">Основное</p>
+        <p class="tab-title" data-tab="preferences" onclick="showTab('preferences')">Предпочтения</p>
+        <p class="tab-title" data-tab="contacts" onclick="showTab('contacts')">Контакты</p>
+      </div>
+        <div class="tab base">
+          <div class="title1">
+            <p class="form-label">Направление</p>
+            <select name="direction" id="direction-select">
+            <option value="dir1">Болгария > Золотые пески</option>
+            <option value="dir2">Казахстан > Актау</option>
+            <option value="dir3">Япония > Окинава</option>
+            <option value="dir4">Россия > Нюрберг</option>
+            </select>
+          </div>
+
+      <div class="title">
+        <p class="form-label">Дата вылета</p>
+        <!-- <select name="date"> -->
+          <input tabindex="1" name="username" type="text" id="username">
+        <!-- </select> -->
+      </div>
+      <div class="title">
+        <p class="form-label">Гости</p>
+        <!-- <select name="guests" > -->
+        <!-- </select> -->
+        <input tabindex="1" name="username" type="text" id="username">
+      </div>
+      <div class="title4">
+        <p class="form-label">Длительность тура (дней)</p>
+        <!-- <select name="days" >
+        </select> -->
+        <input tabindex="1" name="username" type="text" id="username">
+      </div>
+    <div class="title-b">
+      <button type="button" class="button-next" onclick="nextTab('preferences')">ДАЛЬШЕ</button>
+    </div>
+  </div>
+
+
+      <div class="tab preferences" >
+      <div class="title1">
+        <p class="form-label">Желаемая цена на одного человека (€)</p>
+        <input name="price" type="tel" id="price">
+      </div>
+      <div class="title">
+        <p class="form-label">Питание</p>
+        <select name="food">
+          <option value="food1">Без питания</option>
+          <option selected value="food2">Завтрак</option>
+          <option value="food3">Завтрак и ужин</option>
+          <option value="food4">Завтрак, обед, ужин</option>
+          <option value="food5">Всё включено</option>
+          <option value="food6">Ультра: всё включено</option>
+        </select>
+      </div>
+      <div class="title">
+        <p class="form-label">Категория отеля</p>
+        <select name="category">
+          icon-star
+          <option value="dir1">Болгария > Золотые пески</option>
+          <option value="dir2">Казахстан > Актау</option>
+        </select>
+      </div>
+      <div class="title">
+        <p class="form-label">Пожелания</p>
+        <textarea name="wishes" id="wishes" ></textarea>
+      </div>
+      <div class="title-b">
+        <button type="button" class="button-next" onclick="nextTab('contacts')" >ДАЛЬШЕ</button>
+      </div>
+
+      </div>
+
+      <div class="tab contacts " >
+      <div class="title2">
+        <p class="form-label">Имя</p>
+        <input tabindex="1" name="username" type="text" id="username">
+      </div>
+      <div class="title">
+        <p class="form-label">Телефон</p>
+        <input tabindex="2" name="userphone" type="tel" id="userphone">
+      </div>
+      <div class="title">
+        <p class="form-label">Эл. почта</p>
+        <input tabindex="3" type="email" id="useremail" name="useremail">
+      </div>
+
+      <div class="title-b2">
+        <button type="submit" class="button-submit">ПОДОБРАТЬ ТУР</button>
+      </div>
+    </div>
+
+</form>
+</div>
+    </div>
+    @@include('html/footer.html', {})
+    <script src="js/script.header.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.request.js"></script>
+</body>
+
+</html>        

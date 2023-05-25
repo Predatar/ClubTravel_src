@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат поиска - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.nouislider.min.css">
+    <link rel="stylesheet" href="css/style.search.min.css">
+</head>
+
+<body data-page="search">
+    @@include('html/header-middle.html', {})
+    <main class="main">
+        @@include('html/search-bar.html', {title: 'Найти тур'})
+        <section class="search">
+            <div class="search__container">
+                <div class="search__heading">
+                    <div class="search__title">
+                        Найдено 64 предложения в 24 отелях
+                    </div>
+                    <div class="search__calendar">
+                        <span class="icon-calendar-euro"></span>
+                        Цены на календаре
+                    </div>
+                    <div class="search__sorting">
+                        <div class="search__sorting-title">
+                            Сортировать:
+                        </div>
+                        <div class="search__sorting-wrapper">
+                            <div class="search__price">
+                                <div class="search__price-selected">
+                                    Цена
+                                    <span class="icon-chevron-down"></span>
+                                </div>
+                                <div class="search__price-select">
+                                    <div class="search__price-select-item">
+                                        450€
+                                    </div>
+                                    <div class="search__price-select-item">
+                                        500€
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search__rating">
+                                <div class="search__rating-selected">
+                                    Возрастающий
+                                    <span class="icon-chevron-down"></span>
+                                </div>
+                                <div class="search__rating-select">
+                                    <div class="search__rating-select-item">
+                                        Возрастающий
+                                    </div>
+                                    <div class="search__rating-select-item">
+                                        Убывающий
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__main">
+                    <div class="search__item">
+                        <!-- <div class="hotel">
+                            <div class="hotel__wrapper1">
+                                <div class="hotel__img">
+                                    <img src="@img/search/hotel.png" alt="hotel">
+                                </div>
+                                <div class="hotel__profile">
+                                    <div class="hotel__name">
+                                        Название Отеля здесь
+                                    </div>
+                                    <div class="hotel__place">
+                                        <span class="icon-point"></span>
+                                        Болгария, Золотые Пески
+                                    </div>
+                                    <div class="hotel__descr">
+                                        Краткое описание отеля. Рекомендуем для семейного и молодёжного отдыха. Отель
+                                        прекрасно сочетает в себе как современный комфорт, так и высокий уровень
+                                        обслуживания...
+                                    </div>
+                                    <a href="#" class="hotel__link">
+                                        Подробнее об отеле
+                                        <span class="icon-arrow-right"></span>
+                                    </a>
+                                </div>
+                                <div class="hotel__review">
+                                    <div class="hotel__stars">
+                                        <span class="icon-star"></span><span class="icon-star"></span><span
+                                            class="icon-star"></span>
+                                    </div>
+                                    <div class="hotel__days">
+                                        <span class="icon-clock"></span>
+                                        7 ночей
+                                    </div>
+                                    <div class="hotel__eat">
+                                        <span class="icon-food"></span>
+                                        Завтрак
+                                    </div>
+                                    <div class="hotel__apartments">
+                                        <span class="icon-house"></span>
+                                        Standard
+                                    </div>
+                                    <div class="hotel__location">
+                                        <span class="icon-sun"></span>
+                                        Пляж: песок, &lt;50 m
+                                    </div>
+                                </div>
+                                <div class="hotel__card">
+                                    <div class="hotel__card-title">
+                                        2 предложения
+                                        <div>от <span><b>460€</b>/чел</span></div>
+                                    </div>
+                                    <div class="hotel__card-btn">
+                                        Открыть
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hotel__wrapper2">
+                                <div class="hotel__table">
+                                    <div class="hotel__head">
+                                        <div class="hotel__head-cell">Дата </div>
+                                        <div class="hotel__head-cell">Период <span class="icon-drop-down"></span></div>
+                                        <div class="hotel__head-cell">Питание</div>
+                                        <div class="hotel__head-cell">Тип номера</div>
+                                        <div class="hotel__head-cell">Мест в самолёте</div>
+                                        <div class="hotel__head-cell">Стоимость</div>
+                                    </div>
+                                    <div class="hotel__body">
+                                        <div class="hotel__body-row">
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Дата
+                                                </div>
+                                                25 июня 2020
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Период
+                                                </div>
+                                                7 ночей
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Питание
+                                                </div>
+                                                Завтраки
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Тип номера
+                                                </div>
+                                                Standard
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Мест в самолёте
+                                                </div>
+                                                10+
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Стоимость
+                                                </div>
+                                                <b>645€</b>/чел
+                                            </div>
+                                            <a href="#" class="hotel__body-btn">
+                                                Выбрать
+                                            </ф>
+                                        </div>
+                                        <div class="hotel__body-row">
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Дата
+                                                </div>
+                                                25 июня 2020
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Период
+                                                </div>
+                                                7 ночей
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Питание
+                                                </div>
+                                                Завтраки
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Тип номера
+                                                </div>
+                                                Standard
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Мест в самолёте
+                                                </div>
+                                                10+
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Стоимость
+                                                </div>
+                                                <b>645€</b>/чел
+                                            </div>
+                                            <a href="#" class="hotel__body-btn">
+                                                Выбрать
+                                            </ф>
+                                        </div>
+                                        <div class="hotel__body-row">
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Дата
+                                                </div>
+                                                25 июня 2020
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Период
+                                                </div>
+                                                7 ночей
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Питание
+                                                </div>
+                                                Завтраки
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Тип номера
+                                                </div>
+                                                Standard
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Мест в самолёте
+                                                </div>
+                                                10+
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Стоимость
+                                                </div>
+                                                <b>645€</b>/чел
+                                            </div>
+                                            <a href="#" class="hotel__body-btn">
+                                                Выбрать
+                                            </ф>
+                                        </div>
+                                        <div class="hotel__body-row">
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Дата
+                                                </div>
+                                                25 июня 2020
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Период
+                                                </div>
+                                                7 ночей
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Питание
+                                                </div>
+                                                Завтраки
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Тип номера
+                                                </div>
+                                                Standard
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Мест в самолёте
+                                                </div>
+                                                10+
+                                            </div>
+                                            <div class="hotel__body-cell">
+                                                <div class="hotel__body-cell_hide">
+                                                    Стоимость
+                                                </div>
+                                                <b>645€</b>/чел
+                                            </div>
+                                            <a href="#" class="hotel__body-btn">
+                                                Выбрать
+                                            </ф>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/request.html', {})
+    @@include('html/footer.html', {})
+
+    <script src="js/script.header.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.searchBar.js"></script>
+    <script src="js/script.search.js"></script>
+</body>
+
+</html>

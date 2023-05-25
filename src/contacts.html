@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.nouislider.min.css">
+    <link rel="stylesheet" href="css/style.contacts.min.css">
+
+</head>
+
+<body data-page="index">
+    @@include('html/header-middle.html', {})
+
+    <main class="main">
+        <div class="contact">
+            <div class="contact__info">
+              <div class="contact__info__text">
+                <h3>Контакты</h3>
+                <p>Напишите нам</p>
+                <p1>Оставьте свой номер телефона  или <br> электронную почту и мы свяжемся с вами</p1>
+              </div>
+            </div>
+            <div class="contact-details">
+              <h4>Clubs Travel OÜ</h4>
+              <p><span class="icon-mail"></span><a href="mailto:info@clubstravel.ee">info@clubstravel.ee</a></p>
+              <p><span class="icon-phone"></span><a href="tel:+37255560310">+372 555 60 310</a> | <a href="tel:+3726130633">+372 61 30 633</a></p>
+              <p><span class="icon-clock"></span>Пн-Пт 9:30-18:00, Сб 11:00-15:00</p>
+              <p><span class="icon-point"></span>Narva mnt 7D, Tallinn (корпус B) 4 этаж</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <label for="name">Имя(не обязательно):</label>
+            <input type="text" id="name" name="name">
+      
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone">
+      
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+      
+            <label for="message">Сообщение(не обязательно):</label>
+            <textarea id="message" name="message"></textarea>
+      
+            <input type="submit" value="Отправить"> 
+          </form>
+        </div>
+
+      </div>
+
+    </main>
+    <section class="second">  
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.1748181892121!2d24.7603685!3d59.438089999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935e1cef6107%3A0xc9f4c7b9412fc575!2zTmFydmEgbW50IDdkLCAxMDExNyBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sua!4v1683922497378!5m2!1sru!2sua"  frameborder="0" allowfullscreen></iframe>
+    </div>
+    </section>
+
+    @@include('html/footer.html', {})
+    <script src="js/script.header.js"></script> 
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/script.contacts.js"></script>
+</body>
+
+</html>    

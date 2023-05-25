@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Club Travel</title>
+    @@include('html/head.html')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.authorisation.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <div class="authorisation">
+            <div class="authorisation__title">
+                Войдите используя соц. сети
+            </div>
+            <div class="social">
+                <div class="social__facebook">
+                    <img src="@icons/auth/facebook.svg" alt="facebook">
+                    Войти с помощью Facebook
+                </div>
+                <div class="social__google">
+                    <img src="@icons/auth/google.svg" alt="google">
+                    Войти с помощью Google
+                </div>
+            </div>
+            <div class="divider">
+                или
+            </div>
+            <form class="login">
+                <label for="emailLog">E-mail</label>
+                <input type="email" name="email" id="emailLog" class="login__email" required>
+                <label for="passLog">Пароль</label>
+                <a href="@html/recovery.html" class="login__forgot">Забыли пароль?</a>
+                <input type="password" name="pass" id="passLog" class="login__pass" required>
+                <div class="login__wrapper">
+                    <div class="login__btn-reg">
+                        Регистрация
+                    </div>
+                    <button class="login__btn">
+                        Вход
+                    </button>
+                </div>
+            </form>
+            <form class="auth">
+                <label for="emailReg">E-mail</label>
+                <input type="email" name="email" id="emailReg" class="auth__email" required>
+                <label for="passReg">Пароль</label>
+                <input type="password" name="pass" id="passReg" class="auth__pass" required>
+                <label for="repeatReg">Повторите пароль</label>
+                <input type="password" name="passRep" id="repeatReg" class="auth__repeat" required>
+                <div class="auth__wrapper">
+                    <div class="auth__btn-log">
+                        Вход
+                    </div>
+                    <button class="auth__btn">
+                        Регистрация
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="politics">
+            <a href="#" class="politics__conf">
+                Политика конфиденциальности
+            </a>
+            <a href="#" class="politics__users">
+                Политика использования
+            </a>
+        </div>
+    </main>
+    @@include('html/footer.html', {})
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.header.js"></script>
+    <script src="js/script.authorisation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет клиента - Club Travel</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.personal-cabinet.min.css">
+</head>
+
+<body>
+    @@include('html/header-middle.html', {})
+    <main class="main">
+        <div class="wave">
+            <img src="@img/personal-cabinet/wave.png" alt="wave">
+        </div>
+        <section class="personal">
+            <div class="personal__container">
+                <div class="personal__info">
+                    <div class="personal__wrapper">
+                        <div class="personal__info-img">
+                            <img src="@img/personal-cabinet/avatar.png" alt="avatar">
+                        </div>
+                        <div class="personal__info-name">
+                            Еле Колонаева
+                        </div>
+                        <div class="personal__list">
+                            <div class="personal__list-item personal__list-item_active">
+                                <span class="icon-ticket"></span>
+                                Мои заказы
+                            </div>
+                            <div class="personal__list-item">
+                                <span class="icon-payment-card"></span>
+                                История платежей
+                            </div>
+                            <div class="personal__list-item">
+                                <span class="icon-settings"></span>
+                                Настройки
+                            </div>
+                        </div>
+                        <div class="personal__exit">
+                            <span class="icon-exit"></span>
+                            Выход
+                        </div>
+                    </div>
+                    <a href="#" class="personal__privacy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="personal__usage">
+                        Политика использования
+                    </a>
+                </div>
+                <div class="personal__tabs">
+                    <div class="personal__tab">
+                        <div class="orders">
+                            <div class="orders__title">
+                                Заказы
+                            </div>
+                            <div class="orders__table">
+                                <div class="orders__table-head">
+                                    <div class="orders__table-head-cell">Номер заказа</div>
+                                    <div class="orders__table-head-cell">Сумма</div>
+                                    <div class="orders__table-head-cell">E-mail</div>
+                                    <div class="orders__table-head-cell">Cтатус</div>
+                                    <div class="orders__table-head-cell">Дата</div>
+                                </div>
+                                <div class="orders__table-body">
+                                    <div class="orders__table-row">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_paid">Оплачено</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row disable">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row disable">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row disable">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                    <div class="orders__table-row disable">
+                                        <div class="orders__table-cell">
+                                            <div class="orders__number">
+                                                Номер заказа
+                                            </div>
+                                            1588665993
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__sum">
+                                                Сумма
+                                            </div>
+                                            554.00
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__email">
+                                                E-mail
+                                            </div>
+                                            admin@admin.ru
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__status">
+                                                Cтатус
+                                            </div>
+                                            <div class="payment payment_progress">В обработке</div>
+                                        </div>
+                                        <div class="orders__table-cell">
+                                            <div class="orders__date">
+                                                Дата
+                                            </div>
+                                            18 июня 2020 15:01
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders__navigation">
+                                    <div class="orders__navigation-title">
+                                        Показано 9 из 13
+                                    </div>
+                                    <div class="orders__navigation-admin">
+                                        <div class="orders__back">
+                                            Назад
+                                        </div>
+                                        <div class="orders__pages">
+                                            Страница <span>1</span> из 2
+                                        </div>
+                                        <div class="orders__next">
+                                            Вперед
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+</body>
+
+</html>

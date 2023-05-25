@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Club Travel</title>
+    @@include('html/head.html')
+    <link rel="stylesheet" href="css/style.404.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <main class="main">
+        <div class="notFound">
+            <div class="notFound__title">
+                Ой!
+            </div>
+            <div class="notFound__subtitle">
+                Ошибка 404. Похоже, страницы не существует.
+            </div>
+            <div class="notFound__list-title">
+                Вот несколько полезных ссылок:
+            </div>
+            <div class="notFound__list">
+                <a href="#" class="notFound__list-item">
+                    Поиск тура
+                </a>
+                <a href="#" class="notFound__list-item">
+                    Направления
+                </a>
+                <a href="#" class="notFound__list-item">
+                    Кампании
+                </a>
+                <a href="#" class="notFound__list-item">
+                    Горящие предложения
+                </a>
+                <a href="#" class="notFound__list-item">
+                    Запрос тура
+                </a>
+                <a href="#" class="notFound__list-item">
+                    Контакты
+                </a>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html', {})
+
+    <script src="js/script.header.js"></script>
+    <script src="js/script.authorisation.js"></script>
+</body>
+
+</html>
