@@ -400,7 +400,6 @@
     &__region-wrapper {
         height: 236px;
         flex-wrap: wrap;
-        justify-content: space-around;
         gap: 12px 135px;
     }
 
@@ -507,7 +506,6 @@
         border: none;
         border-radius: 50%;
         background: $color-primary;
-        // TODO Сделать Js для cursor grab -> grabbing
         cursor: grab;
         box-shadow: none;
         top: 50%;
