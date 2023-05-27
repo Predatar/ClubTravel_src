@@ -15,4 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
         hotelWrapper1.classList.toggle('hotel__wrapper1_active');
         hotelWrapper2.classList.toggle('hotel__wrapper2_active');
     });
+
+    // TODO Сделать js для всех кнопок
+
+    /* cardBtn.forEach(elem => {
+
+    }) */
 });
+
+
+// TODO Добавить исправления в Search.html и добавить disable класс для мобайл destination.html
+// TODO Помочь Саше с Вёрсткой
