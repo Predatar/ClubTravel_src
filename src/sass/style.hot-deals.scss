@@ -99,8 +99,6 @@ body {
             .hotDeals__price,
             .hotDeals__opens
              {
-              margin: 0;
-              padding: 0;
               vertical-align: middle;
             }
 
@@ -247,7 +245,16 @@ body {
         }
 
         .hotDeals__details  {
-          // display: flex;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          
+          color: #222222;
+          
+          
+
           .hotDeals__items {
             display: flex;
           flex-direction: row;
@@ -273,92 +280,61 @@ body {
         
           .hotDeals__field-values p {
             margin-bottom: 5px;
-            margin: 0 10px;
             white-space: nowrap;
           }
         
           .hotDeals__field-values .button.selectButton {
-            margin-top: 10px;
-            margin: 0 10px;
+            // margin-top: 10px;
+            // margin: 0 10px;
           }
         }
         
-        
+        .hotDeals__field-values{
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        p{
+          margin-right: 10px;
+          flex-grow: 1;
+        }
+        a{           
+          flex-grow: 1;        
+          margin-bottom: 5px;
+          white-space: nowrap;
+          flex-grow: 1;
+        }
+        }
 
 @import 'base/request';
 @import 'base/footer';
 
-// .hotDeals{
-//   margin-left: calc(93px * 100% / 1366px);
-//   margin-right: calc(103px * 100% / 1366px);
-//   width: calc(1170px * 100% / 1366px);
-//   top: 100%;
+////////////////
+// .hotDeals__date{
+//   padding: 0 0 0 33px;
 // }
-// .hotDeals__header {
-//   /* Стилизация заголовков */
-              
-//               display: flex;
-//               flex-direction: row;
-//               align-items: flex-start;
-//               justify-content: flex-start;
-//               flex-wrap: wrap;
-//               flex-grow: 1; 
+// .hotDeals__direction1{
+//   padding: 0px 0 0 15px;
 // }
-
-// .hotDeals__item {
-//   /* Стилизация элементов списка туров */
+// .hotDeals__direction2{
+//   padding: 0px 25px 0 0px;
 // }
-
-// .hotDeals__item-header {
-//   /* Стилизация заголовков дополнительных данных */
+// .hotDeals__duration{
+//   width: 1px;
+//   padding: 0px 0px 0px 0px;
 // }
-
-// .hotDeals__item-details {
-//   /* Стилизация дополнительных данных */
+// .hotDeals__price{
+//   padding-right: 137px;
 // }
-
-// .toggleButton {
-//   /* Стилизация кнопки раскрытия/скрытия данных */
-// }
-
-// .hotDeals__list {
-//   margin-top: 20px;
-// }
-
-// .hotDeals__item {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 10px;
-//   background-color: #f0f0f0;
-//   margin-bottom: 10px;
-// }
-
-// .hotDeals__item-header,
-// .hotDeals__item-data {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-// }
-
-// .hotDeals__item-title {
-//   font-weight: bold;
-//   margin-right: 20px;
-// }
-
-// .hotDeals__item-value {
-//   margin-right: 20px;
-// }
-
-// .button {
-//   padding: 10px 20px;
-//   background-color: #009688;
-//   color: white;
-//   border: none;
-//   cursor: pointer;
-// }
-
-// .hidden {
-//   display: none;
+// .options{
+//   margin: 0px 0px 0px 30px;
 // }
