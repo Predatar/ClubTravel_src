@@ -13,7 +13,7 @@ body{
   height: 700px;
   @media (max-width: 1100px) {
     height: 790px;
-    width: 1000px;
+    width: 900px;
     margin-bottom: 40px;
 }
 }
@@ -30,7 +30,7 @@ body{
 #tourForm {
   justify-content: center;
   flex: 1;
-  margin-right: 105px;
+  margin-right: 111px;
   z-index: 5;
 
   top: -40px;
@@ -78,14 +78,14 @@ body{
   }
 }
 .contact-forms {
-// margin-right: 100px;
+
     
 @media (max-width: 1124px) {
 
   right: 13%;
   }
 }
-.col-lg-6 {
+.col-lg-6,.col-lg-5 {
   margin-left: 90px;
 
     width: 64%;
@@ -103,7 +103,7 @@ body{
       margin-top: 11px;
     }
     @media (max-width: 1345px) {
-      width: 60%;
+      width: 80%;
   }
 }
 
@@ -401,14 +401,61 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  padding: 12px 0px 11px 16px;
+  padding: 10px 0 11px 10px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #222222;
 }
+.number-input {
+  width: 370px;
+  height: 42px;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  overflow: hidden; /* Добавлено, чтобы скрыть обтекание */
+  padding: 0 5px 0 5px;
+}
+
+.input-field {
+  flex: 1;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  border: none;
+  outline: none;
+}
+
+.number-input button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.number-input .icon-minus-circle,
+.number-input .icon-plus-circle {
+  color: #F68521;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+
 textarea {
 resize: none;
 height: 100px;
 }
 .tab {
-  // margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -419,7 +466,7 @@ height: 100px;
   margin: 7px 0 0;
 }
 .title-b{
-  margin-top: 25px ;
+  margin-top: 45px ;
 }
 .title-b2{
   margin-top: 165px ;
@@ -429,6 +476,13 @@ height: 100px;
 }
 .title2{
   margin: 23px 0 0;
+}
+.title3{
+  margin: 5px 0px 23px 0px;
+  right: 120px;
+}
+.advancedSearch__star{
+  padding: 10px 0px 0px 10px;
 }
 .title4{
   margin: 48px 0 0;
@@ -466,12 +520,16 @@ select#direction-select option.indent {
   .container{
   padding: 10px;
   width: 100%;
-height: 1200px;
+height: 850px;
   }
   .col-lg-6{
     width: 80%;
     margin-left: 10px;
   }
+}
+.col-lg-5{
+  margin-left: 90px;
+  width: 64%;
 }
 @media (max-width: 900px){
   .container{
@@ -480,8 +538,6 @@ height: 1200px;
     -ms-flex-direction: column;
     flex-direction: column;
     display: flex;
-
-    // display: block;
     padding: 10px;
     width: 100%;
   height: 1200px;
@@ -500,7 +556,6 @@ height: 1200px;
     align-items: center
     }
     .col-lg-6{
-      // margin-left: 90px;
       width: 80%;
       margin-left: 10px;  
     }
@@ -565,6 +620,11 @@ left: 45px
       height: 1250px;
     }
 }
+@media (max-width: 600px){
+.number-input {
+    width: 370px;
+}
+}
 @media (max-width: 900px){
   .consultant p5{
     right: 132px;
@@ -585,6 +645,13 @@ left: 45px
         height: 1250px;
       }
 }
+@media (max-width: 866px){
+.searchBar__date, .searchBar__direction, .searchBar__duration, .searchBar__guests {
+  width: 370px;
+    height: 50px;
+    border: 1px solid #e2e2e2;
+}
+}
 @media (max-width: 600px){
   .consultant {display: block;}
   .consultant__contact{   
@@ -595,18 +662,20 @@ left: 45px
   .consultant p2{
     white-space: nowrap;
     }
+    .number-input{
+      width: 290px;
+    }
   }
-  // .contact-forms {
-  //   margin-top: auto; /* Добавляем автоматичесный верхний отступ, чтобы блок сместился вниз */
-  // }
-  
   @media  (max-width: 425px) {
-    // .contact-forms {
-    //   margin-top: 0; /* Сбрасываем верхний отступ на большом разрешении */
-    //   position: relative;
-    //   top: 200px;
-    // }
-
+    .searchBar__date, .searchBar__direction, .searchBar__duration, .searchBar__guests {
+      width: 290px;
+    }
+    .title3 {
+      right: 80px;
+  }
+    .number-input {
+      width: 290px;
+  }
     .input-group{
       .form-control{
         width: 300px;
@@ -614,21 +683,52 @@ left: 45px
       .custom-button {
         width: 300px;
       }
+      .searchBar__date, .searchBar__direction, .searchBar__duration, .searchBar__guests {
+        width: 290px;
+      }
     }
   }
   @media (max-width: 360px) {
+  
+    .consultant p4 {
+      top: -14px;
+  }
+  .consultant p5 {
+    right: 161px;
+    top: 242px;
+  }
+  .consultant p6 {
+    right: 121px;
+    top: 274px;
+  }
+  .consultant__contact{   
+    top: 282px;
+    left: 10px;
+   }
+   .icon-phone {
+    padding: 0px 15px 8px 0;
+   }
+
+    .col-lg-5{
+      width: 100%;
+      top: -67px;
+    }
+    .title4 {
+      margin: 40px 0 0;
+  }
     .contact-form h2 {
-      line-height: 1; /* Установите значение, которое подходит для вас */
+      line-height: 1; 
+      top: 15px;
     }
     .contact-form .p1 {
-      padding: 35px 0 0px 3px;
+      padding: 40px 0 0px 4px;
       line-height: 23px;
     }
     .contact-form .p2 {
-      padding: 13px 0 0 0;
+      padding: 11px 0 0 4px;
     }
     .col-lg-6 .recol {
-    margin-top: -3px;
+      margin: -6px 0px 0px 4px;
     }
     .col-lg-6{
       width: 100%;
@@ -639,12 +739,17 @@ left: 45px
   .input-group .custom-button {
     width: 324px;
     margin-top: 15px;
+    right: -3px;
 }
 .fill-form-button {
-  width: 324px;}
+  width: 324px;
+  right: -3px;
+  top: 3px;
+}
 
   }
   @media (max-width: 425px) {
+    
   .fill-form-button {
     width: 300px;
     height: 42px;
@@ -653,8 +758,6 @@ left: 45px
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -687,8 +790,67 @@ left: 45px
   .button-submit { width: 290px;}}
   @media (min-width: 361px) {
     .fill-form-button {
-      display: none; /* Скрыть кнопку */
+      display: none; 
       
     }
   }
 @import 'base/footer';
+ .searchBar__guests {
+  width: 370px;
+  height: 42px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  margin-bottom: 10px;
+  padding: 10px 0 20px 10px;
+}
+ .searchBar__guests-selected span {
+  padding: 0px 0px 0px 180px;
+}
+@media (max-width: 866px){
+.searchBar__date-selected, .searchBar__direction-selected, .searchBar__duration-selected, .searchBar__guests-selected {
+    margin-top: -15px;
+}
+}
+@media (max-width: 768px){
+  .contact-forms {
+    top: 70px;}
+.footer__container {
+    padding: 60px 0 0 15px;
+}
+.footer {
+  top: 100px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+}
+@media (max-width: 425px){
+  .footer {
+    top: 427px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+  .footer__container {
+      padding: 40px 0 0 15px;
+  }
+  }
+  @media (max-width: 360px){
+.contact-forms {
+    top: -29px;
+    right: -3px;
+}
+.footer__container {
+  padding: 40px 0 0 20px;
+}
+.footer {
+  top: 318px;
+} 
+.consultant p4 {
+  top: -5px;
+  right: -14px;
+}
+
+}

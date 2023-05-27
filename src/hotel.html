@@ -8,6 +8,7 @@
     <title>Горящие предложения - Club Travel</title>
     @@include('html/head.html', {})
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.nouislider.min.css">
   <link rel="stylesheet" href="css/style.hotel.min.css">
 
@@ -167,79 +168,166 @@
   </div>
 
   <div class="consultant-block">
-    <h2 class="question-title">ЕСТЬ ВОПРОСЫ ПО ОТЕЛЮ ИЛИ ХОТИТЕ ПОДОБРАТЬ ТУР?</h2>
+    <h2 class="question-title">ЕСТЬ ВОПРОСЫ ПО ОТЕЛЮ ИЛИ <span class="price1"> ХОТИТЕ ПОДОБРАТЬ ТУР?</span></h2>
     <div class="consultant-info">
-      Вам поможет наш консультант Марина Каасик
+      Вам поможет наш консультант <span class="price1"> Марина Каасик </span>
     </div>
+    <div class="consultant-photo">
     <img src="img/hot-deals/consultant.png" alt="Картинка консультанта" class="consultant-image">
-    <a href="tel:+3726130633" class="request__contacts-tel">
+    </div>
+    <div class="consultatn-contact">
+    <a href="tel:+3726130633" class="requet__contacts-tel">
       <span class="icon-phone"></span>
-      +372 6 130 633
+      +372&nbsp; <span class="price1"> 6 130 633 </span>
   </a>
-  <a href="mailto:contact@email.ee" class="request__contacts-mail">
+  <a href="mailto:contact@email.ee" class="requet__contacts-mail">
       <span class="icon-mail"></span>
       contact@email.ee
   </a>
-  <a href="#" class="request__contacts-messenger">
+  <a href="#" class="requet__contacts-messenger">
       <span class="icon-messanger"></span>
       Написать в Messenger
   </a>
-  <a href="#" class="request__contacts-time">
+  <a href="#" class="requet__contacts-time">
     <span class="icon-clock"></span>
-    Пн - Пт 10.00 - 18.00
+    Пн - Пт <span class="price1">10.00 - 18.00 </span>
 </a>
   </div>
-  
+  </div>
     </div>
-
   <div class="container3">
     <div class="title">
     <h2>ПОХОЖИЕ ОТЕЛИ</h2>
     </div>
   <div class="row1">
-    <a href="#">
     <div class="col">
-      <img class="img1"src="img/hotel/image-hotel-1.png" alt="Картинка 1">
-      <div class="caption">Бархатный сезон в Греции!</div>  
-      <div class="date"><span class="icon-clock"></span>25 июня 2020
+      <img class="img1" src="img/hotel/image-hotel-1.png" alt="Картинка 3">
+      <div class="date-place">
+        <div class="date">
+          <span class="icon-clock"></span>
+          29 октября 2020
+        </div>
+        <div class="place">
+          <span class="icon-point"></span>
+          Болгария, Золотые Пески
+        </div>
       </div>
-      <div class="price-tag">от 509€</div>              
-    </div>
-    </a>
-    <a href="#">
-    <div class="col">
-      <img class="img1" src="img/hotel/image-hotel-2.png" alt="Картинка 2">
-      <div class="caption">Бархатный сезон в Греции!</div>
-    <div class="date"><span class="icon-clock"></span>25 июня 2020
-  </div>
-  <div class="price-tag">от 509€</div>
-    </div>
-    </a>
-    <a href="#">
-    <div class="col">
-      <img class="img1" src="img/hotel/image-hotel-3.png" alt="Картинка 3">
-      <div class="all-caption">
-      <div class="caption">Название Отеля здесь</div>
+      <div class="caption-star">
+      <div class="caption">
+        Название Отеля здесь
+      </div>
       <div class="advancedSearch__star">
         <span class="icon-star"></span>
         <span class="icon-star"></span>
         <span class="icon-star"></span>
-    </div>
+      </div>
       </div>
 
-    <div class="date"><span class="icon-clock"></span>29 октября 2020
-  </div>
-  <div class="place"><span class="icon-point"></span>Болгария, Золотые Пески
-  </div>
-  <div class="price-tag">от 509€</div>
-  </div>
-    </a>
-  </div>
-  </div>
+      <div class="price-tag">
+      <div class="price">
+        <span class="price1">509€</span>/чел <span class="price2"><del>779 €/чел</del></span>
+      </div>
+      <div class="discount-badge">
+        <img class="discount" src="img/hotel/Group 1247.png" alt="discount">
+        </div>
+      </div>
 
-  </div>
+    </div>
+    <div class="col">
+      <img class="img1" src="img/hotel/image-hotel-2.png" alt="Картинка 3">
+      <div class="date-place">
+        <div class="date">
+          <span class="icon-clock"></span>
+          29 октября 2020
+        </div>
+        <div class="place">
+          <span class="icon-point"></span>
+          Болгария, Золотые Пески
+        </div>
+      </div>
+      <div class="caption-star">
+      <div class="caption">
+        Название Отеля здесь
+      </div>
+      <div class="advancedSearch__star">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+      </div>
+      </div>
 
-  <script src="swiper.min.js"></script>
+      <div class="price-tag">
+      <div class="price">
+        509€/чел <del>779 €/чел</del>
+      </div>
+      <div class="discount-badge">
+        <img class="discount" src="img/hotel/Group 1247.png" alt="discount">
+        </div>
+      </div>
+
+    </div>
+    <div class="col">
+      <img class="img1" src="img/hotel/image-hotel-3.png" alt="Картинка 3">
+      <div class="date-place">
+        <div class="date">
+          <span class="icon-clock"></span>
+          29 октября 2020
+        </div>
+        <div class="place">
+          <span class="icon-point"></span>
+          Болгария, Золотые Пески
+        </div>
+      </div>
+      <div class="caption-star">
+      <div class="caption">
+        Название Отеля здесь
+      </div>
+      <div class="advancedSearch__star">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+      </div>
+      </div>
+
+      <div class="price-tag">
+      <div class="price">
+        509€/чел <del>779 €/чел</del>
+      </div>
+      <div class="discount-badge">
+        <img class="discount" src="img/hotel/Group 1247.png" alt="discount">
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+  </div>
+  <div class="container4">
+    <div class="title">
+      <h2>ПОХОЖИЕ ОТЕЛИ</h2>
+      </div>
+      <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/hotel/image-hotel-1.png" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/hotel/image-hotel-2.png" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/hotel/image-hotel-3.png" alt="Slide 3">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+  </div>
+@@include('html/request.html', {})
+  @@include('html/footer.html', {})
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.hotel.js"></script>
   <script src="js/script.header.js"></script>
   <script src="js/nouislider.min.js"></script>
