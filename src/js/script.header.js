@@ -57,13 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const authLink = document.querySelector('.header__personal');
 
-    const isLogin = () => {
-        if (localStorage.getItem('isLogin')) {
-            authLink.setAttribute('href', 'personal-cabinet.html');
-        } else {
-            authLink.setAttribute('href', 'authorisation.html');
-        }
-    };
-
-    isLogin();
-});
+    var swiperPrevButton = document.querySelector('.swiper-button-prev');
+    var swiperNextButton = document.querySelector('.swiper-button-next');
+    
+    // Установите фоновое изображение для кнопки "Prev"
+    swiperPrevButton.style.backgroundImage = 'url("путь_к_изображению_предыдущей_кнопки")';
+    
+    // Установите фоновое изображение для кнопки "Next"
+    swiperNextButton.style.backgroundImage = 'url("путь_к_изображению_следующей_кнопки")';
+    
+    // Добавьте обработчики событий для кнопок "Prev" и "Next"
+    swiperPrevButton.addEventListener('click', function () {
+      swiper.slidePrev();
+    });
+    
+    swiperNextButton.addEventListener('click', function () {
+      swiper.slideNext();
+    });
