@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             case 'destination':
                 return 1;
+            case 'compaines':
+                return 2;
+            case 'hot-deals':
+                return 3;
+            case 'request':
+                return 4;
             default:
                 console.log('default');
                 break;
