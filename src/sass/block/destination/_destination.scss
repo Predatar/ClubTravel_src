@@ -16,6 +16,12 @@
         @media (max-width: 425px) {
             width: 100%;
         }
+
+        &_disable {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
     }
 
     &__img {
