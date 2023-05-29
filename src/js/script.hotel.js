@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Ваш JavaScript код с использованием Swiper
+
   var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
 var swiperPrevButton = document.querySelector('.swiper-button-prev');
 var swiperNextButton = document.querySelector('.swiper-button-next');
 
-// Установите фоновое изображение для кнопки "Prev"
+
 swiperPrevButton.style.backgroundImage = 'url("@img/hotel/Group 940.png")';
 
-// Установите фоновое изображение для кнопки "Next"
+
 swiperNextButton.style.backgroundImage = 'url("@img/hotel/Group 941.png")';
 
-// Добавьте обработчики событий для кнопок "Prev" и "Next"  
+  
 swiperPrevButton.addEventListener('click', function () {
   swiper.slidePrev();
 });
