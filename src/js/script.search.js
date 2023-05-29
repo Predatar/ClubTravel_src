@@ -1,18 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const hotelCard = document.querySelector('.hotel__card');
-    const cardBtn = document.querySelector('.hotel__card-btn');
-    const hotelWrapper1 = document.querySelector('.hotel__wrapper1');
-    const hotelWrapper2 = document.querySelector('.hotel__wrapper2');
+    const hotelCard = document.querySelectorAll('.hotel__card');
+    const cardBtn = document.querySelectorAll('.hotel__card-btn');
+    const hotelWrapper1 = document.querySelectorAll('.hotel__wrapper1');
+    const hotelWrapper2 = document.querySelectorAll('.hotel__wrapper2');
 
-    cardBtn.addEventListener('click', () => {
-        hotelCard.classList.toggle('hotel__card_active');
-        cardBtn.classList.toggle('hotel__card-btn_active');
+    const openDropDownMenu = index => {
+        hotelCard[index].classList.toggle('hotel__card_active');
+        cardBtn[index].classList.toggle('hotel__card-btn_active');
 
-        cardBtn.classList.contains('hotel__card-btn_active')
-            ? (cardBtn.innerHTML = 'Закрыть')
-            : (cardBtn.innerHTML = 'Открыть');
+        cardBtn[index].classList.contains('hotel__card-btn_active')
+            ? (cardBtn[index].innerHTML = 'Закрыть')
+            : (cardBtn[index].innerHTML = 'Открыть');
 
-        hotelWrapper1.classList.toggle('hotel__wrapper1_active');
-        hotelWrapper2.classList.toggle('hotel__wrapper2_active');
+        hotelWrapper1[index].classList.toggle('hotel__wrapper1_active');
+        hotelWrapper2[index].classList.toggle('hotel__wrapper2_active');
+    };
+
+    cardBtn.forEach((elem, index) => {
+        elem.addEventListener('click', () => {
+            openDropDownMenu(index);
+        });
     });
+
 });
