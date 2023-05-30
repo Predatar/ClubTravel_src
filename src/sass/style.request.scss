@@ -17,23 +17,17 @@ body{
     margin-bottom: 40px;
 }
 }
-
-
 .data-block {
   @media (max-width: 1090px) {
-    
       width: 670px;
   }
 }
-
-
 #tourForm {
   justify-content: center;
   flex: 1;
   margin-right: 111px;
   z-index: 5;
-
-  top: -40px;
+  top: -39px;
   border-radius: 10px;
   @media (max-width: 1050px) {
     left: 40px;
@@ -42,9 +36,14 @@ body{
   margin: 0;
 }
 }
+// [class*=" icon-"], [class^=icon-]{
 
+// margin: 7px 0 23px 8px;
+//     right: 120px;
+// }
 .contact-form{
   padding: 10px;
+
   h2{
     font-family: 'Open Sans';
     font-style: normal;
@@ -77,14 +76,12 @@ body{
     padding: 23px 0 0 0;
   }
 }
-.contact-forms {
+// .contact-forms { 
+// @media (max-width: 1124px) {
+//   right: 13%;
+//   }
+// }
 
-    
-@media (max-width: 1124px) {
-
-  right: 13%;
-  }
-}
 .col-lg-6,.col-lg-5 {
   margin-left: 90px;
 
@@ -117,7 +114,7 @@ body{
   background: #FFFFFF;
   border: 1px solid #E2E2E2;
   border-radius: 6px 0px 0px 6px;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 
 .input-group .custom-button {
@@ -137,13 +134,13 @@ body{
   color: white;
   background: #F68521;
   border: none;
-  margin-top: 12px;
+  margin-top: 11px;
   border-radius: 0px 6px 6px 0px;
   cursor: pointer;
 }
 
 .recol{
-  padding: 20px 0px 5px 0px;
+  padding: 21px 0px 5px 0px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -195,19 +192,15 @@ content: url("@img/hot-deals/consultant.png");
         display: block;
       }
     }
-
-
     .consultant{
-        // flex: 1;
         display: flex;
-        top: 32px;
+        top: 31px;
 
       &__photo{
           content: url("@img/hot-deals/consultant.png");
           position: absolute;
           width: 270px;
           height:180px;
-          // padding: 10px;
           mix-blend-mode: normal;
           border-radius: 6px;
           flex: 0 0 auto;
@@ -245,7 +238,6 @@ content: url("@img/hot-deals/consultant.png");
 
       p5{
           position: absolute;
-          // left: 75.27%;
           right:-165px;
           top: 31px;
           bottom: 40.18%;
@@ -261,7 +253,6 @@ content: url("@img/hot-deals/consultant.png");
       }
       p6{
           position: absolute;
-          // left: 75.27%;
           right: -205px;
           top: 66px;
           bottom: 36.14%;
@@ -290,7 +281,7 @@ content: url("@img/hot-deals/consultant.png");
       }
       .icon-phone,.icon-mail,.icon-messanger{
         color: $color-check-active;
-        padding: 0px 10px 8px 0px;
+        padding: 0px 12px 10px 4px;
         font-size: 20px;
       }
   }
@@ -333,10 +324,10 @@ form {
 
 .tab-title.active {
   opacity: 1;
-  font-weight: bold;
   background: #FFFFFF;
   opacity: 1;
   border-radius: 10px;
+  padding: 0px 0px 2px 3px;
 }
 .form-label {
   font-family: 'Open Sans';
@@ -366,6 +357,7 @@ form {
   color: #222222;
   border-radius: 6px;
   cursor: pointer;
+  padding: 0 0 3px 1px;
 }
 .button-submit {
   width: 370px;
@@ -401,11 +393,11 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  padding: 10px 0 11px 10px;
+  padding: 11px 0 11px 14px;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 19px;
 
 color: #222222;
@@ -419,7 +411,7 @@ color: #222222;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  overflow: hidden; /* Добавлено, чтобы скрыть обтекание */
+  overflow: hidden; 
   padding: 0 5px 0 5px;
 }
 
@@ -466,34 +458,37 @@ height: 100px;
   margin: 7px 0 0;
 }
 .title-b{
-  margin-top: 45px ;
+
 }
 .title-b2{
   margin-top: 165px ;
 }
 .title1{
-  margin: 26px 0 0;
+  margin: 25px 0 0;
 }
 .title2{
   margin: 23px 0 0;
 }
 .title3{
-  margin: 5px 0px 23px 0px;
+  margin: 7px 0 29px 8px;
   right: 120px;
+}
+.title1_1{
+  padding: 25px 0px 0px 0px;
 }
 .advancedSearch__star{
   padding: 10px 0px 0px 10px;
 }
 .title4{
-  margin: 48px 0 0;
+  margin: 48px 0px 46px 0px;
+}
+.title5{
+  margin: 0px 0px 31px 0px;
 }
 select#direction-select option.indent {
   padding-left: 20px;
 }
 @media (max-width: 1024px) {
-  .contact-form h2{
-    // white-space: nowrap;
-  }
   .input-group{
     display: inline;
     .form-control{
@@ -596,44 +591,32 @@ right: -162px;
 right: -203px;
   }  
   .contact-forms{
+    top: 60px;
     width: auto;
     right: auto;  
+  }
+  .footer{
+    top: 110px; 
   }
   .consultant{
     padding-bottom: 200px
   }
 }
-@media (max-width: 900px){
-  .consultant p5{
-  right: -210px;
-  }
-    .consultant p6{
-  right: -250px;
-    }  
-    .consultant__contact{
-left: 45px
-    }
-    #tourForm{
-      top: 35px;
-    }
-    .container{
-      height: 1250px;
-    }
-}
 @media (max-width: 600px){
 .number-input {
     width: 370px;
+}
+.col-lg-5, .col-lg-6{
+  margin-left: 0;
+  width: 100%;
 }
 }
 @media (max-width: 900px){
   .consultant p5{
     right: 132px;
-    top: 233px;
     }
       .consultant p6{
         right: 89px;
-        top: 270px;
-    
       }  
       .consultant__contact{
   left: 45px
@@ -644,6 +627,21 @@ left: 45px
       .container{
         height: 1250px;
       }
+      .consultant p5{
+        right: -210px;
+        }
+          .consultant p6{
+        right: -250px;
+          }  
+          .consultant__contact{
+      left: 45px
+          }
+          #tourForm{
+            top: 35px;
+          }
+          .container{
+            height: 1250px;
+          }
 }
 @media (max-width: 866px){
 .searchBar__date, .searchBar__direction, .searchBar__duration, .searchBar__guests {
@@ -688,8 +686,11 @@ left: 45px
       }
     }
   }
+  //////
   @media (max-width: 360px) {
-  
+    .recol-2{
+      display: block;
+    }
     .consultant p4 {
       top: -14px;
   }
@@ -719,16 +720,17 @@ left: 45px
     .contact-form h2 {
       line-height: 1; 
       top: 15px;
+      padding: 0 0 0 5px;
     }
     .contact-form .p1 {
-      padding: 40px 0 0px 4px;
+      padding: 39px 0 0px 5px;
       line-height: 23px;
     }
     .contact-form .p2 {
       padding: 11px 0 0 4px;
     }
     .col-lg-6 .recol {
-      margin: -6px 0px 0px 4px;
+      margin: -5px 0px 0 5px;
     }
     .col-lg-6{
       width: 100%;
@@ -795,6 +797,7 @@ left: 45px
     }
   }
 @import 'base/footer';
+
  .searchBar__guests {
   width: 370px;
   height: 42px;
@@ -837,6 +840,7 @@ left: 45px
       padding: 40px 0 0 15px;
   }
   }
+  ///////
   @media (max-width: 360px){
 .contact-forms {
     top: -29px;
@@ -850,7 +854,44 @@ left: 45px
 } 
 .consultant p4 {
   top: -5px;
-  right: -14px;
+  right: -10px;
 }
 
+}
+@media (max-width: 1366px){
+  .form-label{
+    margin: 0 0 7px 15px;
+  }
+  .footer{
+    top: -53px;
+  }
+  .contact-form .p1{
+    padding: 27px 30px 9px 0px;
+  }
+  .contact-form{
+    padding: 10px 10px 10px 8px;
+  }
+  .input-group{
+    width: 521px;
+  }
+  .input-group .form-control {
+    width: 435px;
+  }
+  .consultant p2{
+    padding: 3px 5px 7px 5px;
+  }
+  .consultant p6{
+    right: -210px;
+    top: 65px;
+}
+.consultant p5{
+  right: -170px
+}
+.consultant p4{
+  right: -8px;
+}
+  .consultant__photo{
+    left: 8px;
+    top: 21px;
+  }
 }
