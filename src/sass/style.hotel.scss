@@ -55,19 +55,19 @@ margin: 0 77px 0 97px;
   line-height: 27px;
   
   color: #222222;
-  margin-right: 10px; // Регулируйте значение для нужного отступа между элементами
+  margin-right: 10px; 
 }
 .form-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; // Регулируйте значение для нужного вертикального отступа между элементами
+  margin-bottom: 10px; 
 }
 
 .form-item .icon-calendar,
 .form-item .icon-airplane,
 .form-item .icon-food,
 .form-item .icon-house {
-  margin-right: 10px; // Регулируйте значение для нужного отступа между иконкой и текстом
+  margin-right: 10px; 
 }
 
  .price1 {
@@ -75,10 +75,6 @@ margin: 0 77px 0 97px;
 }
 .price2{
 }
-
-
-
-
 
 .container2 {
   display: flex;
@@ -100,22 +96,13 @@ margin: 0 77px 0 97px;
 
 
 
-
-
-
-
-
-
-
 .change-link{
-  // padding: 0 24px 0 0;
-  font-family: 'Open Sans';
+font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
 color: #F68521;
-
 opacity: 0.5;
 }
 
@@ -374,7 +361,7 @@ h3{
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 10%); // тень
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 10%); 
   border-radius: 11px;
   
   .img1 {
@@ -609,7 +596,6 @@ h3{
 .list-1, .list-3, .list-6{
 float: right;
 width: 52%;
-
 }
   .container3 {
     margin: 10px 150px 0 150px;
@@ -682,12 +668,10 @@ padding: 0;
   background-color: #333;
 }
 
-/* Медиа-запрос для максимальной ширины 768px */
 @media (max-width: 768px) {
   .container4 {
-    // margin: 10px 150px 0 150px;
       display: block;
-      order: 3; /* Показываем контейнер3 */
+      order: 3; 
   }
   .container3 {
     display: none; 
@@ -695,18 +679,17 @@ padding: 0;
   
   .slider {
     order: 3;
-      display: block; /* Показываем свайпер */
+      display: block; 
   }
 }
 
-/* Скрытие контейнера3 и свайпера при ширине экрана больше 768px */
 @media (min-width: 769px) {
   .container4 {
-      display: none; /* Скрываем контейнер3 */
+      display: none;
   }
   
   .slider {
-      display: none; /* Скрываем свайпер */
+      display: none; 
   }
 }
 .slider-prev,
