@@ -245,4 +245,108 @@ document.addEventListener('DOMContentLoaded', () => {
   incBtn.addEventListener('click', () => {
     inputField.value = 1 + +inputField.value;
   });
+
+  const guestModal = document.querySelector('.guest__modal');
+  const guestSelect = document.querySelectorAll('.guest__select');
+  const guestSelected = document.querySelectorAll('.guest__selected');
+  const guestList = document.querySelectorAll('.guest__list');
+  const guestListItem = document.querySelectorAll('.guest__list-item');
+  const guestMinus = document.querySelectorAll('.guest__count .icon-minus-circle');
+  const guestPlus = document.querySelectorAll('.guest__count .icon-plus-circle');
+  const guestCount = document.querySelectorAll('.guest__count-wrapper');
+  const guestAddBtn = document.querySelector('.guest__btn-add');
+
+  const guestRow = document.getElementsByClassName('guest__form-row');
+  const guestRowClose = document.getElementsByClassName('guest__delete');
+
+  document.querySelector('.searchBar__guests-selected').addEventListener('click', () => {
+    guestModal.classList.toggle('guest__modal_active');
+
+    if (!guestModal.classList.contains('guest__modal_active')) {
+      guestList.forEach(elem => {
+        elem.classList.contains('guest__list_active') ? elem.classList.remove('guest__list_active') : null;
+      });
+    }
+  });
+
+  guestSelect.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      if (guestList[index].classList.contains('guest__list_active')) {
+        guestList.forEach(elem => {
+          elem.classList.contains('guest__list_active') ? elem.classList.remove('guest__list_active') : null;
+        });
+      } else {
+        guestList[index].classList.add('guest__list_active');
+      }
+    });
+  });
+
+  guestList.forEach((elem, index) => {
+    elem.addEventListener('click', ({ target }) => {
+      console.log(target);
+      guestListItem.forEach(elem => {
+        elem.classList.contains('guest__list-item_active') ? elem.classList.remove('guest__list-item_active') : null;
+      });
+      target.classList.add('guest__list-item_active');
+
+      guestSelected[index].childNodes[0].textContent = target.innerHTML;
+    });
+  });
+
+  guestMinus.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      guestCount[index].innerHTML = -1 + +guestCount[index].innerHTML;
+    });
+  });
+  guestPlus.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      guestCount[index].innerHTML = 1 + +guestCount[index].innerHTML;
+    });
+  });
+
+  /* guestRowClose.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      guestRow[++index].remove();
+    });
+  }); */
+
+  for (let i = 0; i < guestRowClose.length; i++) {
+    guestRowClose[i].addEventListener('click', () => {
+      guestRow[++i].remove();
+    });
+  }
+
+  guestAddBtn.addEventListener('click', () => {
+    document.querySelector('.guest__form').innerHTML += /* html */ `<div class="guest__form-row">
+    <div class="guest__select">
+      <div class="guest__selected">
+        Взрослый
+        <span class="icon-chevron-down"></span>
+      </div>
+      <div class="guest__list">
+        <div class="guest__list-item guest__list-item_active">
+          Взрослый
+        </div>
+      </div>
+    </div>
+    <div class="guest__count guest__count_addition">
+      <span class="icon-minus-circle"></span>
+      <div class="guest__count-wrapper">
+        1
+      </div>
+      <span class="icon-plus-circle"></span>
+    </div>
+    <div class="guest__delete">
+      <span class="icon-close"></span>
+    </div>
+  </div>`;
+
+    for (let i = 0; i < guestRowClose.length; i++) {
+      guestRowClose[i].addEventListener('click', () => {
+        guestRow[++i].remove();
+      });
+    }
+
+    console.log(guestRow);
+  });
 });
