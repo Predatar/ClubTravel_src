@@ -25,9 +25,9 @@ margin: 0 77px 0 97px;
       }
       
       &.small-image {
-        width: 171px;
+        width: 169px;
         height: 96px;
-        margin: 12px 11px 0px 1px;
+        margin: 12px 6px 0 6px;
       }
     }
   }
@@ -107,7 +107,7 @@ opacity: 0.5;
 }
 
 .text-block {
-  width: 731px;
+  width: 735px;
   height: 320px;
   
   h2 {
@@ -159,7 +159,7 @@ color: #222222;
 .small-info {
   clear: both;
   width: 100%;
-  margin-top: 43px;
+  margin-top: 42px;
 }
 
 
@@ -173,7 +173,7 @@ color: #222222;
 .list-2,
 .list-4,
 .list-5 {
-  padding: 31px 0 0 0 ;
+  padding: 32px 0 0 0 ;
 }
 
 
@@ -181,11 +181,11 @@ color: #222222;
 .list-3,
 .list-6 {
   float: right;
-  width: 52%;
+  width: 52.5%
 }
 .list-3,
 .list-6 {
-padding: 30px 0 0 0;
+padding: 32px 0 0 0;
 }
 .p1 {
   padding: 15px 0 0 0;
@@ -219,7 +219,7 @@ h3{
   color: #222222;
 }
 .list-item{
-  padding: 15px 0 0 0 ;
+  padding: 16px 0 0 0 ;
 }
 
 .container2 {
@@ -267,39 +267,70 @@ h3{
       padding: 16px; 
 
       .consultant-image {
-        top: 0; 
+        top: 3px; 
         mix-blend-mode: normal;
         border-radius: 6px;
         width: 322px;
-        height: 162px;
+        height: 160px;
       }
     }
 
     .consultatn-contact{
-      left: 7px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding: 0 24px 0 24px;
+      padding: 0 26px 0 26px;
     }
     .consultatn-contact a {
       display: flex;
       align-items: center;
-      margin-bottom: 17px; 
+      margin-bottom: 18px; 
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
       color: #222222;
-      
     }
+
+    .time{    
+      padding: 2px 0 0 0;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #222222;
+      .icon-clock{
+        margin:0 14px 0  0px; 
+        color: #3E7739;
+        opacity: 0.5;    
+        font-size: 19px; 
+      }
+      .small-space {
+        padding: 0px 0px 0 4px;
+      }
+    }
+  
     
     .consultatn-contact a .icon-clock, .icon-phone ,.icon-mail, .icon-messanger {
-      margin:0 17px 0  0px; 
+      margin:0 14px 0  0px; 
       color: #3E7739;
-      opacity: 0.5;     
+      opacity: 0.5;    
+      font-size: 19px; 
+    }
+    .icon-mail{
+
     }
     
   
@@ -308,6 +339,7 @@ h3{
   max-width: 100%;
   margin: auto;
   padding-bottom: 171px;
+  // padding-bottom: 64px;
   clear: both;
 }
 
@@ -315,8 +347,8 @@ h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
-  margin-right: 16px;
+  margin-bottom: 38px;
+  margin-right: 18px;
   
   h2 {
     font-family: 'Open Sans';
@@ -334,8 +366,12 @@ h3{
     margin-right: 28px;
     margin-top: 95px;
   }
-  
+}
 
+.price-1{
+  font-size: 18px;
+  top: 2px;
+  font-weight: 700;
 }
 
 .row1 {
@@ -363,10 +399,6 @@ h3{
   background-color: #fff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 10%); 
   border-radius: 11px;
-  
-  .img1 {
-
-  }
 
   .date-place {
     position: absolute; 
@@ -384,8 +416,6 @@ h3{
     line-height: 19px;
     color: #FFFFFF;
 
-    
-    
     .date {
       display: flex;
       align-items: center;
@@ -393,7 +423,7 @@ h3{
       width: 150px;
       height: 28px;
       left: 14px;
-      top: 164px;
+      top: 167px;
       border-radius:5px;
       background-color: rgba(0, 0, 0, 0.5);
       @media screen and (max-width: 1070px) {
@@ -403,7 +433,7 @@ h3{
       .icon-clock{
         font-size: 13px;
         width: 7px;
-        margin:    10px ;
+        margin: 10px 14px 7px 6px;
         justify-content: left;
         color: white;  
       }
@@ -417,7 +447,7 @@ h3{
       width: 208px;
       height: 29px;
       left: 14px;
-      top: 204px;
+      top: 207px;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.5);
       @media screen and (max-width: 1070px) {
@@ -427,36 +457,38 @@ h3{
       .icon-point{
         font-size: 14px;
         width: 7px;
-        margin:    10px ;
+        margin: 10px 14px 7px 6px;
         justify-content: left;
         color: white;  
       }
       
     }
   }
-  
-  
-  
+  .star{
+    .icon-star{
+      font-size: 15px;
+      padding: 0px 0px 0px 3px;
+    }
+  }
   .caption-star {
-    padding-right: 18px;
+    padding-right: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     
     .caption {
-      padding: 10px 0px 0px 16px;
+      padding: 12px 0 0 17px;
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-
       color: #222222;
     }
     
     .advancedSearch__star {
-      // Стили для звездочек
+      padding: 10px 2px 0px 2px;
     }
   }
   
@@ -483,7 +515,7 @@ h3{
     
   }
   .price {
-    padding: 13px 0 0 16px;
+    padding: 10px 0 0 17px;
     del {
       text-decoration: line-through;
       text-decoration-color: #BFBFBF;
@@ -491,7 +523,8 @@ h3{
   }
   
   .discount-badge {
-    padding: 15px 2px 0 0;
+    padding: 16px 2px 0 0;
+    color: #F5C213;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -528,7 +561,7 @@ h3{
     margin: 0px 40px 0 40px;
 }
 .text-block h2{
-  width: 380px;
+  width: 300px;
 }
   .container3{
     margin: 10px 255px 0px 255px;
@@ -575,9 +608,10 @@ h3{
   .container3 {
     order: 3;
     margin: 10px 204px 0 204px;
+    width: 386px;
   }
   .footer {
-    order: 4;
+    order: 22;
 }
   .image-group2{
     display: none;
@@ -628,7 +662,7 @@ padding: 0;
 
 .slider {
   width: 100%;
-  height: 300px;
+  height: 340px;
   background-color: white;
   overflow: hidden;
   position: relative;
@@ -681,6 +715,9 @@ padding: 0;
     order: 3;
       display: block; 
   }
+  .col{
+    top: 15px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -731,9 +768,7 @@ padding: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 54px;
-  height: 54px;
-  // background-color: rgba(0, 0, 0, 0.5);
-  // border-radius: 50%;
+  height: 54px;;
   color: #fff;
   cursor: pointer;
 }
@@ -741,13 +776,14 @@ padding: 0;
 .swiper-button-next {
   background-color: transparent;
   background-image: none;
-  width: 40px; /* Ширина кнопки */
-  height: 40px; /* Высота кнопки */
+  width: 40px; 
+  height: 40px; 
 }
 
 .swiper-button-prev:before,
 .swiper-button-next:before {
   content: '';
+  right: 27px;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -760,26 +796,18 @@ padding: 0;
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
   content: url("@img/hotel/Group 940.png");
-  // right: 75px;
     position: absolute;
 }
-// .swiper-button-next:before, .swiper-button-prev:before{
-//   right: 135px;
-//   position: absolute;
-// }
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
   content: url("@img/hotel/Group 941.png");
   position: absolute;
-// left: 75px;
 }
+
 @media (max-width: 450px) {
-  .text-block{
-  width: 360px;
-  height: 600px;
+  .col .date-place .place{
+    top: 170px;
   }
 
-}
-@media (max-width: 450px) {
   .text-block{
   width: 360px;
   height: 600px;
@@ -793,9 +821,10 @@ padding: 0;
     height: 218px;
   }
   .image-group img.small-image{
-    margin: 5px 5px 0 3px;
-    width: 70px;
-    height: 42px;
+    margin: 4px 2px 0 2px;
+    width: 73px;
+    height: 43px;
+    border-radius: 10px;
   }
   .info-title1, .list-2, .list-4, .list-5, .list-1, .list-3, .list-6{
     float: none;
@@ -825,4 +854,88 @@ padding: 0;
     display: block;
     order: 5;
   }
+}
+@media (max-width: 360px) {
+  .swiper-button-next{
+  right: 27px;
+  }
+  .swiper-button-prev{
+    left: 21px;
+  }
+  .form-placeholder{
+    width: 100%;
+  }
+  .main__container{
+    margin: 0;
+  }
+  .image-group{
+    top: 30px;
+    height: 326px;
+  }
+  .text-block{
+    height: 700px;
+    padding: 0 22px 0px 18px;
+  }
+  .list-1,.list-3 ,.list-4,.list-5,.list-6{
+    padding-top: 32px;
+  }
+  .list-2{
+    padding-top: 33px;
+  }
+  .small-info{
+    padding: 22px 16px 1px 17px;
+  }
+  .image-group3{
+    padding: 61px 16px 0 0;
+  }
+  .consultant-block2{
+    padding: 52px 0 0 0;
+  .question-title{
+    padding: 23px 61px 0 16px;
+  }
+  .consultant-info{
+    padding: 18px 0 0 16px;
+  }
+  .consultatn-contact{
+    padding: 0 23px 0 19px;
+  }
+}
+.container4{
+  top: -13px;
+}
+.title h2{
+  padding: 0 0 0 23px;
+  font-weight: 700;
+}
+.col{
+  top: 25px;
+}
+.col .date-place .place{
+  top: 205px;
+  left: 16px;
+}
+.col .date-place .place .icon-point{
+  margin: 10px 12px 8px 8px;
+}
+.col .caption-star .caption{
+  padding: 15px 0 0 14px;
+}
+.advancedSearch__star{
+  right: -2px;
+  padding: 14px 0px 0px 0px;
+  gap: 3px;
+}
+picture{
+  height: 250px;
+}
+.col .price{
+  padding: 10px 0 0 15px;
+}
+.price5{
+  padding: 0 0 0 8px;
+  font-weight: 700;
+}
+.container4{
+  padding-bottom: 62px;
+}
 }
