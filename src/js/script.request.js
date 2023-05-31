@@ -14,8 +14,7 @@ function nextTab(nextTabName) {
   var inputs = currentTab.querySelectorAll('input, select');
   var isAllFieldsFilled = true;
 
-  inputs.forEach(function(input) {  
-    
+  inputs.forEach(function (input) {
     if (!input.value) {
       isAllFieldsFilled = false;
     }
@@ -29,7 +28,7 @@ function nextTab(nextTabName) {
   }
 }
 
-document.getElementById('tourForm').addEventListener('submit', function(event) {
+document.getElementById('tourForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
   // Получение данных из всех трёх вкладок и их обработка
@@ -41,7 +40,6 @@ document.getElementById('tourForm').addEventListener('submit', function(event) {
 
 // Показываем первую вкладку при загрузке страницы
 showTab('base');
-
 
 ////////var2
 
@@ -83,8 +81,6 @@ showTab('base');
 // // Показываем первую вкладку при загрузке страницы
 // showTab('base');
 ////////////////////////////
-
-
 
 // var activeTab = 'base'; // Идентификатор активной вкладки
 // var allowTabSwitching = false; // Разрешение перехода между вкладками
@@ -178,19 +174,16 @@ showTab('base');
 //   // ...
 // });
 
-
-
-
-
-
 ////////////////////
-document.getElementById('tourForm').addEventListener('submit', function(event) {
+document.getElementById('tourForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
   // Получение данных из всех трех вкладок
   var baseTabInputs = document.querySelectorAll('.tab.base input, .tab.base select');
   var preferencesTabInputs = document.querySelectorAll('.tab.preferences input, .tab.preferences select');
-  var contactsTabInputs = document.querySelectorAll('.tab.contacts input, .tab.contacts select, .tab.contacts textarea');
+  var contactsTabInputs = document.querySelectorAll(
+    '.tab.contacts input, .tab.contacts select, .tab.contacts textarea'
+  );
 
   // Создание объекта для хранения данных
   var formData = {
@@ -200,17 +193,17 @@ document.getElementById('tourForm').addEventListener('submit', function(event) {
   };
 
   // Получение данных из вкладки "Основное"
-  baseTabInputs.forEach(function(input) {
+  baseTabInputs.forEach(function (input) {
     formData.base[input.name] = input.value;
   });
 
   // Получение данных из вкладки "Предпочтения"
-  preferencesTabInputs.forEach(function(input) {
+  preferencesTabInputs.forEach(function (input) {
     formData.preferences[input.name] = input.value;
   });
 
   // Получение данных из вкладки "Контакты"
-  contactsTabInputs.forEach(function(input) {
+  contactsTabInputs.forEach(function (input) {
     formData.contacts[input.name] = input.value;
   });
 
@@ -238,3 +231,18 @@ function showTab(tabName) {
   document.querySelector('.tab-title[data-tab="' + tabName + '"]').classList.add('active');
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const decBtn = document.querySelector('.decrement-button');
+  const incBtn = document.querySelector('.increment-button');
+  const inputField = document.querySelector('.input-field');
+
+  decBtn.addEventListener('click', event => {
+    if (inputField.value > 0) {
+      inputField.value = -1 + +inputField.value;
+    }
+  });
+
+  incBtn.addEventListener('click', () => {
+    inputField.value = 1 + +inputField.value;
+  });
+});

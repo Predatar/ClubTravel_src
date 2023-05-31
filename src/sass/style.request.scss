@@ -3,7 +3,7 @@
 @import 'base/header';
 @import 'base/searchBar';
 
-body{
+body {
   overflow-x: hidden;
 }
 .container {
@@ -15,11 +15,11 @@ body{
     height: 790px;
     width: 900px;
     margin-bottom: 40px;
-}
+  }
 }
 .data-block {
   @media (max-width: 1090px) {
-      width: 670px;
+    width: 670px;
   }
 }
 #tourForm {
@@ -31,6 +31,10 @@ body{
   border-radius: 10px;
   @media (max-width: 1050px) {
     left: 40px;
+  }
+  @media (max-width: 1330px) {
+    margin: 0;
+  }
 }
 @media (max-width: 1330px) {
   margin: 0;
@@ -39,7 +43,7 @@ body{
 .contact-form{
   padding: 10px;
 
-  h2{
+  h2 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -47,37 +51,38 @@ body{
     line-height: 49px;
     top: 10px;
   }
-  .p1{
+  .p1 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    
+
     color: #222222;
-    
+
     padding: 25px 0px 10px 0;
   }
-  .p2{
+  .p2 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    
+
     color: #222222;
-    
+
     opacity: 0.5;
     padding: 23px 0 0 0;
   }
 }
 
-.col-lg-6,.col-lg-5 {
+.col-lg-6,
+.col-lg-5 {
   margin-left: 90px;
 
-    width: 64%;
-    @media (max-width: 1200px) {
-      margin-left: 30px;
+  width: 64%;
+  @media (max-width: 1200px) {
+    margin-left: 30px;
   }
 
     .form-group {
@@ -92,6 +97,14 @@ body{
     @media (max-width: 1345px) {
       width: 80%;
   }
+
+  .recol {
+    flex: 1;
+    margin-top: 11px;
+  }
+  @media (max-width: 1345px) {
+    width: 80%;
+  }
 }
 
 .input-group {
@@ -99,10 +112,10 @@ body{
 }
 
 .input-group .form-control {
-  width:450px;
+  width: 450px;
   height: 42px;
-  background: #FFFFFF;
-  border: 1px solid #E2E2E2;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
   border-radius: 6px 0px 0px 6px;
   margin-top: 11px;
 }
@@ -122,7 +135,7 @@ body{
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: white;
-  background: #F68521;
+  background: #f68521;
   border: none;
   margin-top: 11px;
   border-radius: 0px 6px 6px 0px;
@@ -137,143 +150,98 @@ body{
   font-size: 18px;
   line-height: 25px;
 }
-.contact-info__photo{
-content: url("@img/hot-deals/consultant.png");
-            position: absolute;
-            width: 210px;
-            padding: 10px;
-            mix-blend-mode: normal;
-            border-radius: 6px;
+.contact-info__photo {
+  content: url('@img/hot-deals/consultant.png');
+  position: absolute;
+  width: 210px;
+  padding: 10px;
+  mix-blend-mode: normal;
+  border-radius: 6px;
 }
-    .tab-container {
-        justify-content: flex-end;
-        align-items: flex-start;
-        display: flex;
-        width: 410px;
-        height: 540px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-  
-      .tab {
-        cursor: pointer;
-        background-color: #ddd;
-        padding: 10px;
-        margin-left: 5px;
-        border-radius: 5px 5px 0 0;
-        border: 1px solid #ccc;
-        border-bottom: none;
-  
-        &.active {
-          background-color: #fff;
-          border-color: #ccc;
-        }
-      }
-  
-      .tab-content {
-        display: none;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-top: none;
-        border-radius: 0 0 5px 5px;
-      }
-  
-      .tab-content:first-of-type {
-        display: block;
-      }
+.tab-container {
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  width: 410px;
+  height: 540px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  .tab {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+
+    &.active {
+      background-color: #fff;
+      border-color: #ccc;
     }
-    .consultant{
-        display: flex;
-        top: 31px;
+  }
 
-      &__photo{
-          content: url("@img/hot-deals/consultant.png");
-          position: absolute;
-          width: 270px;
-          height:180px;
-          mix-blend-mode: normal;
-          border-radius: 6px;
-          flex: 0 0 auto;
-          left: 10px;
-          top: 24px;
-      }
-      &__text {
-          display: flex;
-          flex-direction: column;
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 25px;
-          top: -10px;
-        }
-        &__contact{
-          flex: 1 1 auto;
-          display: flex;
-          flex-direction: column;
-          top: 96px;
-              }
-      p4{
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 25px;
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+  }
 
-          top: -10px;
-          @media (max-width: 1350px) {
-            top: -20px;
-        }
-      }
+  .tab-content:first-of-type {
+    display: block;
+  }
+}
+.consultant {
+  display: flex;
+  top: 31px;
 
-      p5{
-          position: absolute;
-          right:-165px;
-          top: 31px;
-          bottom: 40.18%;
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 30px;
-          @media (max-width: 1345px) {
-           right: -240px;
-        }
+  &__photo {
+    content: url('@img/hot-deals/consultant.png');
+    position: absolute;
+    width: 270px;
+    height: 180px;
+    mix-blend-mode: normal;
+    border-radius: 6px;
+    flex: 0 0 auto;
+    left: 10px;
+    top: 24px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    top: -10px;
+  }
+  &__contact {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    top: 96px;
 
-      }
-      p6{
-          position: absolute;
-          right: -205px;
-          top: 66px;
-          bottom: 36.14%;
-          
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 19px;
-          @media (max-width: 1345px) {
-            right: -280px;
-        }
-      } 
-      p2{
-        display: flex;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
+    span {
+      color: $color-secondary-light !important;
+      opacity: 0.5;
+    }
+  }
+  p4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
 
-        padding: 5px;
-        @media (max-width: 1345px) {
-         left: 70px;
-      }
-      }
-      .icon-phone,.icon-mail,.icon-messanger{
-        color: $color-check-active;
-        padding: 0px 12px 10px 4px;
-        font-size: 20px;
-      }
+    top: -10px;
+    @media (max-width: 1350px) {
+      top: -20px;
+    }
   }
   @media (max-width: 660px){
     .consultant p5{
@@ -289,12 +257,12 @@ content: url("@img/hot-deals/consultant.png");
 form {
   height: 544px;
   width: 418px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; 
+  border-radius: 10px;
   @media (max-width: 1055px) {
     margin: 0;
-}
+  }
 }
 
 .tabs {
@@ -309,7 +277,7 @@ form {
   text-align: center;
   width: 138px;
   height: 58px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   opacity: 0.2;
   display: flex;
   align-items: center;
@@ -325,7 +293,7 @@ form {
 
 .tab-title.active {
   opacity: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 1;
   border-radius: 10px;
   padding: 0px 0px 2px 3px;
@@ -374,21 +342,21 @@ form {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color:white;
-  background: #F68521;
+  color: white;
+  background: #f68521;
   border-radius: 6px;
-  border: 1px solid ;
+  border: 1px solid;
   cursor: pointer;
 }
-input[type="text"],
-input[type="tel"],
-input[type="email"],
+input[type='text'],
+input[type='tel'],
+input[type='email'],
 select,
 textarea {
   width: 370px;
   height: 42px;
-  background: #FFFFFF;
-  border: 1px solid #E2E2E2;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -396,23 +364,23 @@ textarea {
   margin-bottom: 10px;
   padding: 11px 0 11px 14px;
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 
-color: #222222;
+  color: #222222;
 }
 .number-input {
   width: 370px;
   height: 42px;
-  border: 1px solid #E2E2E2;
+  border: 1px solid #e2e2e2;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 0 5px 0 5px;
 }
 
@@ -438,15 +406,14 @@ color: #222222;
 
 .number-input .icon-minus-circle,
 .number-input .icon-plus-circle {
-  color: #F68521;
+  color: #f68521;
   opacity: 0.5;
   font-size: 15px;
 }
 
-
 textarea {
-resize: none;
-height: 100px;
+  resize: none;
+  height: 100px;
 }
 .tab {
   display: flex;
@@ -455,35 +422,34 @@ height: 100px;
   align-content: flex-end;
   flex-wrap: wrap;
 }
-.title{
+.title {
   margin: 7px 0 0;
 }
-.title-b{
-
+.title-b {
 }
-.title-b2{
-  margin-top: 165px ;
+.title-b2 {
+  margin-top: 165px;
 }
-.title1{
+.title1 {
   margin: 25px 0 0;
 }
-.title2{
+.title2 {
   margin: 23px 0 0;
 }
-.title3{
+.title3 {
   margin: 7px 0 29px 8px;
   right: 120px;
 }
-.title1_1{
+.title1_1 {
   padding: 25px 0px 0px 0px;
 }
-.advancedSearch__star{
+.advancedSearch__star {
   padding: 10px 0px 0px 10px;
 }
-.title4{
+.title4 {
   margin: 48px 0px 46px 0px;
 }
-.title5{
+.title5 {
   margin: 0px 0px 31px 0px;
 }
 select#direction-select option.indent {
@@ -511,35 +477,35 @@ select#direction-select option.indent {
   padding: 0px 0px 0px 180px;
 }
 @media (max-width: 1024px) {
-  .input-group{
+  .input-group {
     display: inline;
-    .form-control{
+    .form-control {
       width: 360px;
     }
     .custom-button {
       width: 360px;
     }
   }
-  .consultant{
+  .consultant {
     top: 100px;
   }
-  .consultant__text{
+  .consultant__text {
     white-space: nowrap;
   }
-  .consultant__photo{   
-     width: 300px;
+  .consultant__photo {
+    width: 300px;
     height: 200px;
   }
   .contact-forms {
     right: 10%;
-}
-
-  .container{
-  padding: 10px;
-  width: 100%;
-height: 850px;
   }
-  .col-lg-6{
+
+  .container {
+    padding: 10px;
+    width: 100%;
+    height: 850px;
+  }
+  .col-lg-6 {
     width: 80%;
     margin-left: 10px;
   }
@@ -591,6 +557,20 @@ height: 850px;
   left: 0;
     }
   .contact-forms {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  #tourForm {
+    top: 100px;
+  }
+  .contact-forms {
     right: 12%;
 }
 .consultant p2{
@@ -605,13 +585,13 @@ right: -260px;
   .contact-forms{
     top: 60px;
     width: auto;
-    right: auto;  
+    right: auto;
   }
-  .footer{
-    top: 110px; 
+  .footer {
+    top: 110px;
   }
-  .consultant{
-    padding-bottom: 200px
+  .consultant {
+    padding-bottom: 200px;
   }
   .consultant__contact{
   left: 45px
@@ -632,11 +612,15 @@ right: -260px;
           height: 1250px;
         }
 }
-@media (max-width: 866px){
-.searchBar__date, .searchBar__direction, .searchBar__duration, .searchBar__guests {
-  width: 370px;
+@media (max-width: 866px) {
+  .searchBar__date,
+  .searchBar__direction,
+  .searchBar__duration,
+  .searchBar__guests {
+    width: 370px;
     height: 50px;
     border: 1px solid #e2e2e2;
+  }
 }
 }
 @media (max-width: 600px){
@@ -667,18 +651,46 @@ right: -260px;
     top: 270px;
     width: 200px;
   }
-  .consultant p2{
+  .consultant p2 {
     white-space: nowrap;
+  }
+  .number-input {
+    width: 290px;
+  }
+}
+@media (max-width: 425px) {
+  .searchBar__date,
+  .searchBar__direction,
+  .searchBar__duration,
+  .searchBar__guests {
+    width: 290px;
+  }
+  .title3 {
+    right: 80px;
+  }
+  .number-input {
+    width: 290px;
+  }
+  .input-group {
+    .form-control {
+      width: 300px;
     }
-    .number-input{
-      width: 290px;
+    .custom-button {
+      width: 300px;
     }
 }
   @media (max-width: 520px) {
   .fill-form-button {
+    width: 324px;
+    right: -3px;
+    top: 3px;
+  }
+}
+@media (max-width: 425px) {
+  .fill-form-button {
     width: 300px;
     height: 42px;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -691,7 +703,7 @@ right: -260px;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: black;
     border: 1px solid #f68521;
@@ -705,7 +717,11 @@ right: -260px;
     top: 200px;
     width: 320px;
   }
-  input[type=email], input[type=tel], input[type=text], select, textarea {
+  input[type='email'],
+  input[type='tel'],
+  input[type='text'],
+  select,
+  textarea {
     width: 290px;
     margin: 0px 0px 10px 3px;
   }
@@ -743,26 +759,37 @@ right: -260px;
 @media (max-width: 866px){
 .searchBar__date-selected, .searchBar__direction-selected, .searchBar__duration-selected, .searchBar__guests-selected {
     margin-top: -15px;
+  }
 }
-}
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .contact-forms {
-    top: 70px;}
-.footer__container {
+    top: 70px;
+  }
+  .footer__container {
     padding: 60px 0 0 15px;
+  }
+  .footer {
+    top: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
-.footer {
-  top: 100px;
-  border-top: 1px solid rgba(0,0,0,.1);
-}
-}
-@media (max-width: 425px){
+@media (max-width: 425px) {
   .footer {
     top: 427px;
-    border-top: 1px solid rgba(0,0,0,.1);
-}
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
   .footer__container {
-      padding: 40px 0 0 15px;
+    padding: 40px 0 0 15px;
+  }
+}
+///////
+@media (max-width: 360px) {
+  .contact-forms {
+    top: -29px;
+    right: -3px;
+  }
+  .footer__container {
+    padding: 40px 0 0 20px;
   }
 }
   @media (max-width: 360px){
@@ -867,35 +894,35 @@ right: -260px;
   .form-label{
     margin: 0 0 7px 15px;
   }
-  .footer{
+  .footer {
     top: -53px;
   }
-  .contact-form .p1{
+  .contact-form .p1 {
     padding: 27px 30px 9px 0px;
   }
-  .contact-form{
+  .contact-form {
     padding: 10px 10px 10px 8px;
   }
-  .input-group{
+  .input-group {
     width: 521px;
   }
   .input-group .form-control {
     width: 435px;
   }
-  .consultant p2{
+  .consultant p2 {
     padding: 3px 5px 7px 5px;
   }
-  .consultant p6{
+  .consultant p6 {
     right: -210px;
     top: 65px;
-}
-.consultant p5{
-  right: -170px
-}
-.consultant p4{
-  right: -8px;
-}
-  .consultant__photo{
+  }
+  .consultant p5 {
+    right: -170px;
+  }
+  .consultant p4 {
+    right: -8px;
+  }
+  .consultant__photo {
     left: 8px;
     top: 21px;
   }
