@@ -41,140 +41,6 @@ document.getElementById('tourForm').addEventListener('submit', function (event) 
 // Показываем первую вкладку при загрузке страницы
 showTab('base');
 
-////////var2
-
-// function showTab(tabName) {
-//   var tabs = document.getElementsByClassName('tab');
-//   for (var i = 0; i < tabs.length; i++) {
-//     tabs[i].style.display = 'none';
-//   }
-//   document.getElementsByClassName(tabName)[0].style.display = 'block';
-// }
-
-// function nextTab(nextTabName) {
-//   // Проверка на валидность и заполненность полей текущей вкладки
-//   // ...
-
-//   // Переход на следующую вкладку
-//   showTab(nextTabName);
-
-//   // Делаем только активную вкладку кликабельной, а остальные - нет
-//   var tabTitles = document.getElementsByClassName('tab-title');
-//   for (var i = 0; i < tabTitles.length; i++) {
-//     tabTitles[i].onclick = null;
-//   }
-//   document.querySelector('.tab-title.' + nextTabName).onclick = function() {
-//     showTab(nextTabName);
-//   };
-// }
-
-// document.getElementById('tourForm').addEventListener('submit', function(event) {
-//   event.preventDefault();
-
-//   // Получение данных из всех трёх вкладок и их обработка
-//   // ...
-
-//   // Вывод данных в нужное место на странице или отправка на сервер
-//   // ...
-// });
-
-// // Показываем первую вкладку при загрузке страницы
-// showTab('base');
-////////////////////////////
-
-// var activeTab = 'base'; // Идентификатор активной вкладки
-// var allowTabSwitching = false; // Разрешение перехода между вкладками
-
-// function showTab(tabName) {
-//   var tabs = document.querySelectorAll('.tab');
-//   for (var i = 0; i < tabs.length; i++) {
-//     tabs[i].style.display = 'none';
-//   }
-//   document.querySelector('.' + tabName).style.display = 'block';
-// }
-
-// function nextTab(nextTabName) {
-//   // Проверка на валидность и заполненность полей текущей вкладки
-//   // ...
-
-//   // Разрешение перехода между вкладками
-//   allowTabSwitching = true;
-
-//   // Переход на следующую вкладку
-//   showTab(nextTabName);
-//   activeTab = nextTabName;
-
-//   // Сохранение данных в localStorage
-//   var form = document.getElementById('tourForm');
-//   var formData = new FormData(form);
-//   for (var pair of formData.entries()) {
-//     localStorage.setItem(pair[0], pair[1]);
-//   }
-// }
-
-// function switchTab(tabName) {
-//   if (allowTabSwitching) {
-//     showTab(tabName);
-//     activeTab = tabName;
-//   }
-// }
-
-// document.getElementById('tourForm').addEventListener('submit', function(event) {
-//   event.preventDefault();
-
-//   // Получение данных из всех трёх вкладок и их обработка
-//   // ...
-
-//   // Вывод данных в нужное место на странице или отправка на сервер
-//   // ...
-
-//   // Очистка данных из localStorage
-//   localStorage.clear();
-// });
-
-// // Показываем первую вкладку при загрузке страницы
-// showTab(activeTab);
-
-// // Обработка клика на названиях вкладок
-// var tabTitles = document.getElementsByClassName('tab-title');
-// for (var i = 0; i < tabTitles.length; i++) {
-//   tabTitles[i].addEventListener('click', function() {
-//     var tabName = this.getAttribute('data-tab');
-//     switchTab(tabName);
-//   });
-// }
-
-// // Запрет перехода по вкладкам, если кнопка "ДАЛЬШЕ" не была нажата
-// var tabLinks = document.querySelectorAll('.tab-title');
-// for (var i = 0; i < tabLinks.length; i++) {
-//   tabLinks[i].addEventListener('click', function(e) {
-//     if (!allowTabSwitching) {
-//       e.preventDefault();
-//     }
-//   });
-// }
-
-// document.getElementById('tourForm').addEventListener('submit', function(event) {
-//   event.preventDefault();
-
-//   // Получение данных из всех трёх вкладок и их обработка
-//   // ...
-
-//   // Сохранение данных в localStorage
-//   var formInputs = document.querySelectorAll('#tourForm input, #tourForm select, #tourForm textarea');
-
-//   formInputs.forEach(function(input) {
-//     localStorage.setItem(input.name, input.value);
-//   });
-
-//   // Вывод данных в нужное место на странице или отправка на сервер
-//   // ...
-
-//   // Переход на следующую страницу или выполнение других действий
-//   // ...
-// });
-
-////////////////////
 document.getElementById('tourForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
@@ -247,17 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const guestModal = document.querySelector('.guest__modal');
-  const guestSelect = document.querySelectorAll('.guest__select');
-  const guestSelected = document.querySelectorAll('.guest__selected');
-  const guestList = document.querySelectorAll('.guest__list');
-  const guestListItem = document.querySelectorAll('.guest__list-item');
-  const guestMinus = document.querySelectorAll('.guest__count .icon-minus-circle');
-  const guestPlus = document.querySelectorAll('.guest__count .icon-plus-circle');
-  const guestCount = document.querySelectorAll('.guest__count-wrapper');
+  const guestMinus = document.querySelector('.guest__count .icon-minus-circle');
+  const guestPlus = document.querySelector('.guest__count .icon-plus-circle');
+  const guestCount = document.querySelector('.guest__count-wrapper');
   const guestAddBtn = document.querySelector('.guest__btn-add');
-
-  const guestRow = document.getElementsByClassName('guest__form-row');
-  const guestRowClose = document.getElementsByClassName('guest__delete');
 
   document.querySelector('.searchBar__guests-selected').addEventListener('click', () => {
     guestModal.classList.toggle('guest__modal_active');
@@ -269,84 +128,95 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  guestSelect.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      if (guestList[index].classList.contains('guest__list_active')) {
-        guestList.forEach(elem => {
-          elem.classList.contains('guest__list_active') ? elem.classList.remove('guest__list_active') : null;
-        });
-      } else {
-        guestList[index].classList.add('guest__list_active');
-      }
-    });
+  guestMinus.addEventListener('click', () => {
+    if (guestCount.innerHTML > 0) {
+      guestCount.innerHTML = -1 + +guestCount.innerHTML;
+    }
   });
 
-  guestList.forEach((elem, index) => {
-    elem.addEventListener('click', ({ target }) => {
-      console.log(target);
-      guestListItem.forEach(elem => {
-        elem.classList.contains('guest__list-item_active') ? elem.classList.remove('guest__list-item_active') : null;
-      });
-      target.classList.add('guest__list-item_active');
-
-      guestSelected[index].childNodes[0].textContent = target.innerHTML;
-    });
+  guestPlus.addEventListener('click', () => {
+    guestCount.innerHTML = 1 + +guestCount.innerHTML;
   });
-
-  guestMinus.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestCount[index].innerHTML = -1 + +guestCount[index].innerHTML;
-    });
-  });
-  guestPlus.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestCount[index].innerHTML = 1 + +guestCount[index].innerHTML;
-    });
-  });
-
-  /* guestRowClose.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestRow[++index].remove();
-    });
-  }); */
-
-  for (let i = 0; i < guestRowClose.length; i++) {
-    guestRowClose[i].addEventListener('click', () => {
-      guestRow[++i].remove();
-    });
-  }
 
   guestAddBtn.addEventListener('click', () => {
-    document.querySelector('.guest__form').innerHTML += /* html */ `<div class="guest__form-row">
-    <div class="guest__select">
-      <div class="guest__selected">
-        Взрослый
-        <span class="icon-chevron-down"></span>
-      </div>
-      <div class="guest__list">
-        <div class="guest__list-item guest__list-item_active">
-          Взрослый
-        </div>
-      </div>
-    </div>
-    <div class="guest__count guest__count_addition">
-      <span class="icon-minus-circle"></span>
-      <div class="guest__count-wrapper">
-        1
-      </div>
-      <span class="icon-plus-circle"></span>
-    </div>
-    <div class="guest__delete">
-      <span class="icon-close"></span>
-    </div>
-  </div>`;
+    const guestForm = document.querySelector('.guest__form');
 
-    for (let i = 0; i < guestRowClose.length; i++) {
-      guestRowClose[i].addEventListener('click', () => {
-        guestRow[++i].remove();
-      });
-    }
+    const guestFormRow = document.createElement('div');
+    guestFormRow.classList.add('guest__form-row');
 
-    console.log(guestRow);
+    const guestAddSelect = document.createElement('div');
+    guestAddSelect.classList.add('guest__select');
+    guestAddSelect.addEventListener('click', () => {
+      guestAddSelect.childNodes[1].classList.toggle('guest__list_active');
+    });
+
+    const guestAddSelected = document.createElement('div');
+    guestAddSelected.classList.add('guest__selected');
+    guestAddSelected.innerHTML = 'Взрослый<span class="icon-chevron-down"></span>';
+
+    const guestAddList = document.createElement('div');
+    guestAddList.classList.add('guest__list');
+    guestAddList.innerHTML = /* html */ `<div class="guest__list-item guest__list-item_active">
+      Взрослый
+      </div><div class="guest__list-item">
+      15 лет
+      </div><div class="guest__list-item">
+      12 лет
+      </div>`;
+    guestAddList.addEventListener('click', ({ target }) => {
+      if (target.classList.contains('guest__list-item')) {
+        target.parentNode.childNodes.forEach(elem => {
+          elem.classList.remove('guest__list-item_active');
+        });
+        target.classList.add('guest__list-item_active');
+
+        target.parentNode.parentNode.childNodes[0].childNodes[0].textContent = target.innerHTML;
+      }
+    });
+
+    const guestAddCount = document.createElement('div');
+    guestAddCount.classList.add('guest__count', 'guest__count_addition');
+
+    const iconMinus = document.createElement('span');
+    iconMinus.classList.add('icon-minus-circle');
+    iconMinus.addEventListener('click', () => {
+      if (iconMinus.parentNode.childNodes[1].innerHTML > 0) {
+        iconMinus.parentNode.childNodes[1].innerHTML = -1 + +iconMinus.parentNode.childNodes[1].innerHTML;
+      }
+    });
+    
+    const iconPlus = document.createElement('span');
+    iconPlus.classList.add('icon-plus-circle');
+    iconPlus.addEventListener('click', () => {
+      iconPlus.parentNode.childNodes[1].innerHTML = 1 + +iconPlus.parentNode.childNodes[1].innerHTML;
+    });
+
+    const guestCountWrapper = document.createElement('div');
+    guestCountWrapper.classList.add('guest__count-wrapper');
+    guestCountWrapper.innerHTML = '1';
+
+    guestAddCount.appendChild(iconMinus);
+    guestAddCount.appendChild(guestCountWrapper);
+    guestAddCount.appendChild(iconPlus);
+
+    const guestDelete = document.createElement('div');
+    guestDelete.classList.add('guest__delete');
+
+    const iconClose = document.createElement('span');
+    iconClose.classList.add('icon-close');
+    iconClose.addEventListener('click', ({ target }) => {
+      console.log(target.parentNode.parentNode.remove());
+    });
+
+    guestDelete.appendChild(iconClose);
+
+    guestAddSelect.appendChild(guestAddSelected);
+    guestAddSelect.appendChild(guestAddList);
+
+    guestFormRow.appendChild(guestAddSelect);
+    guestFormRow.appendChild(guestAddCount);
+    guestFormRow.appendChild(guestDelete);
+
+    guestForm.appendChild(guestFormRow);
   });
 });
