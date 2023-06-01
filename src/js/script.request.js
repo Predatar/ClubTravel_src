@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iconMinus.parentNode.childNodes[1].innerHTML = -1 + +iconMinus.parentNode.childNodes[1].innerHTML;
       }
     });
-    
+
     const iconPlus = document.createElement('span');
     iconPlus.classList.add('icon-plus-circle');
     iconPlus.addEventListener('click', () => {
@@ -218,5 +218,19 @@ document.addEventListener('DOMContentLoaded', () => {
     guestFormRow.appendChild(guestDelete);
 
     guestForm.appendChild(guestFormRow);
+  });
+
+  const stars = document.querySelectorAll('.advancedSearch__star .icon-star');
+
+  stars.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      console.log('click', index);
+      stars.forEach(elem => {
+        elem.classList.contains('icon-star_active') ? elem.classList.remove('icon-star_active') : null;
+      });
+      for (let i = 0; i < elem.getAttribute('data-index'); i++) {
+        stars[i].classList.add('icon-star_active');
+      }
+    });
   });
 });
