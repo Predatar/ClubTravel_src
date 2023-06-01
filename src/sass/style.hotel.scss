@@ -11,7 +11,7 @@
 .main__container{
 margin: 0 77px 0 97px;
 }
-  .image-group {
+  .image-group,.image-group2 {
     height: 684px;
     width: 744px;
     position: relative;
@@ -31,7 +31,9 @@ margin: 0 77px 0 97px;
       }
     }
   }
-  
+  .image-group2{
+    display: none;
+  }
 .form-placeholder {
   width: 371px;
   height: 692px;
@@ -261,9 +263,7 @@ h3{
       line-height: 22px;
       color: #555555;
     }
-
     .consultant-photo {
-      text-align: center;
       padding: 16px; 
 
       .consultant-image {
@@ -321,25 +321,19 @@ h3{
         padding: 0px 0px 0 4px;
       }
     }
-  
-    
+
     .consultatn-contact a .icon-clock, .icon-phone ,.icon-mail, .icon-messanger {
       margin:0 14px 0  0px; 
       color: #3E7739;
       opacity: 0.5;    
       font-size: 19px; 
     }
-    .icon-mail{
 
-    }
-    
-  
 .container3,.container4 {
   top: 70px;
   max-width: 100%;
   margin: auto;
   padding-bottom: 171px;
-  // padding-bottom: 64px;
   clear: both;
 }
 
@@ -461,7 +455,6 @@ h3{
         justify-content: left;
         color: white;  
       }
-      
     }
   }
   .star{
@@ -576,8 +569,18 @@ h3{
   top: 210px;
 }
 }
-
+@media (min-width: 900px) {
+  .image-group3, .consultant-block2 {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
+  .image-group3{
+  padding: 61px 0px 0 0;
+  }
+  .consultant-block2{
+    width: 370px;
+  }
 
   .main__container {
     display: flex;
@@ -804,6 +807,9 @@ padding: 0;
 }
 
 @media (max-width: 450px) {
+  .consultant-block2{
+    width: 360px;
+  }
   .col .date-place .place{
     top: 170px;
   }
@@ -856,6 +862,25 @@ padding: 0;
   }
 }
 @media (max-width: 360px) {
+  .img-group{
+    display: block;
+    top: 30px;
+    height: 326px;
+    width: 325px;
+  }
+  .img-group img.big-image{
+    width: 320px;
+    height: 218px;
+  }
+  .img-group img.small-image{
+    margin: 4px 2px 0 2px;
+    width: 73px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  .image-group{
+    display: none;
+  }
   .swiper-button-next{
   right: 27px;
   }
