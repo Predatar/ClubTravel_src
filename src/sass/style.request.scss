@@ -970,6 +970,7 @@ select#direction-select option.indent {
 
   &__selected {
     display: flex;
+    justify-content: space-between;
 
     font-family: 'Roboto';
     font-weight: 400;
