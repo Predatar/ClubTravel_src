@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Запрос тура - Club Travel</title>
   @@include('html/head.html', {})
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.nouislider.min.css">
-  <link rel="stylesheet" href="css/style.request.min.css">
-
+  <link rel="stylesheet" href="css/style.nouislider.min.css" />
+  <link rel="stylesheet" href="css/style.request.min.css" />
 </head>
 
 <body data-page="request">
@@ -21,20 +20,20 @@
         <div class="contact-form">
           <h2>Нет времени искать тур?</h2>
           <p class="p1">Просто скажите нам как должен выглядеть отдых вашей мечты и мы найдём лучший тур для вас!</p>
-          <p class="p2">Заполните короткую форму запроса на нашем сайте и мы свяжемся с вами в течении 1 часа в рабочее
-            время</p>
+          <p class="p2">
+            Заполните короткую форму запроса на нашем сайте и мы свяжемся с вами в течении 1 часа в рабочее время
+          </p>
 
           <div class="form-group">
             <div class="recol">Оставьте свой номер телефона и мы вам перезвоним</div>
             <div class="recol-2">Оставьте свой номер телефона и мы перезвоним вам</div>
           </div>
           <div class="input-group">
-            <input type="tel" class="form-control" placeholder="Ваш номер телефона">
+            <input type="tel" class="form-control" placeholder="Ваш номер телефона" />
             <button type="submit" class="btn btn-primary custom-button">Перезвонить</button>
           </div>
           <a href="#tourForm" class="fill-form-button">ЗАПОЛНИТЬ ФОРМУ</a>
         </div>
-
       </div>
 
       <div class="col-lg-5">
@@ -44,8 +43,7 @@
             <p5>Марина Каасик</p5>
             <p6>Специалист по подбору туров</p6>
           </div>
-          <div class="consultant__photo">
-          </div>
+          <div class="consultant__photo"></div>
           <div class="consultant__contact">
             <p2 class="contact-phone"><span class="icon-phone"></span>+372 6 130 633</p2>
             <p2><span class="icon-mail"></span>contact@email.ee</p2>
@@ -89,60 +87,22 @@
                 <span class="icon-chevron-down"></span>
               </div>
               <div class="guest__modal">
-                <div class="guest__title">
-                  Добавьте необходимое кол-во гостей и укажите возраст
-                </div>
+                <div class="guest__title">Добавьте необходимое кол-во гостей и укажите возраст</div>
                 <div class="guest__form">
                   <div class="guest__form-row">
                     <div class="guest__select">
                       <div class="guest__selected">
                         Взрослый
-                        <span class="icon-chevron-down"></span>
-                      </div>
-                      <div class="guest__list">
-                        <div class="guest__list-item">
-                          Взрослый
-                        </div>
-                        <div class="guest__list-item">
-                          Дети
-                        </div>
                       </div>
                     </div>
                     <div class="guest__count">
                       <span class="icon-minus-circle"></span>
-                      <div class="guest__count-wrapper">
-                        1
-                      </div>
+                      <div class="guest__count-wrapper">1</div>
                       <span class="icon-plus-circle"></span>
                     </div>
                   </div>
-                  <div class="guest__form-row">
-                    <div class="guest__select">
-                      <div class="guest__selected">
-                        Взрослый
-                        <span class="icon-chevron-down"></span>
-                      </div>
-                      <div class="guest__list">
-                        <div class="guest__list-item guest__list-item_active">
-                          Взрослый
-                        </div>
-                      </div>
-                    </div>
-                    <div class="guest__count guest__count_addition">
-                      <span class="icon-minus-circle"></span>
-                      <div class="guest__count-wrapper">
-                        1
-                      </div>
-                      <span class="icon-plus-circle"></span>
-                    </div>
-                    <div class="guest__delete">
-                      <span class="icon-close"></span>
-                    </div>
-                  </div>
                 </div>
-                <div class="guest__btn-add">
-                  Добавить
-                </div>
+                <div class="guest__btn-add">Добавить</div>
               </div>
             </div>
           </div>
@@ -150,7 +110,7 @@
             <p class="form-label">Длительность тура (дней)</p>
             <div class="number-input">
               <button class="decrement-button" type="button"><span class="icon-minus-circle"></span></button>
-              <input type="number" min="1" max="100" value="1" class="input-field">
+              <input type="number" min="1" max="100" value="1" class="input-field" disabled />
               <button class="increment-button" type="button"><span class="icon-plus-circle"></span></button>
             </div>
             <!-- <input tabindex="1" name="username" type="text" id="username"> -->
@@ -160,11 +120,10 @@
           </div>
         </div>
 
-
         <div class="tab preferences">
           <div class="title1_1">
             <p class="form-label">Желаемая цена на одного человека (€)</p>
-            <input name="price" type="tel" id="price">
+            <input name="price" type="tel" id="price" />
           </div>
           <div class="title">
             <p class="form-label">Питание</p>
@@ -181,14 +140,13 @@
             <p class="form-label">Категория отеля</p>
 
             <div class="advancedSearch__star">
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
+              <span class="icon-star" data-index="1"></span>
+              <span class="icon-star" data-index="2"></span>
+              <span class="icon-star" data-index="3"></span>
+              <span class="icon-star" data-index="4"></span>
+              <span class="icon-star" data-index="5"></span>
+              <span class="icon-star" data-index="6"></span>
             </div>
-
           </div>
           <div class="title5">
             <p class="form-label">Пожелания</p>
@@ -197,28 +155,26 @@
           <div class="title-b">
             <button type="button" class="button-next" onclick="nextTab('contacts')">ДАЛЬШЕ</button>
           </div>
-
         </div>
 
-        <div class="tab contacts ">
+        <div class="tab contacts">
           <div class="title2">
             <p class="form-label">Имя</p>
-            <input tabindex="1" name="username" type="text" id="username">
+            <input tabindex="1" name="username" type="text" id="username" />
           </div>
           <div class="title">
             <p class="form-label">Телефон</p>
-            <input tabindex="2" name="userphone" type="tel" id="userphone">
+            <input tabindex="2" name="userphone" type="tel" id="userphone" />
           </div>
           <div class="title">
             <p class="form-label">Эл. почта</p>
-            <input tabindex="3" type="email" id="useremail" name="useremail">
+            <input tabindex="3" type="email" id="useremail" name="useremail" />
           </div>
 
           <div class="title-b2">
             <button type="submit" class="button-submit">ПОДОБРАТЬ ТУР</button>
           </div>
         </div>
-
       </form>
     </div>
   </div>

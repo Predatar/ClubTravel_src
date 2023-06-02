@@ -1,15 +1,15 @@
 class newsDao {
-    #url;
-    constructor(url) {
-        this.#url = url;
-    }
+  #url;
+  constructor(url) {
+    this.#url = url;
+  }
 
-    async getData(element) {
-        await fetch(this.#url)
-            .then(response => response.json())
-            .then(({ data }) =>
-                data.forEach(({ attributes }) => {
-                    element.innerHTML += /* html */ `<div class="swiper-slide news__slide">
+  async getData(element) {
+    await fetch(this.#url)
+      .then(response => response.json())
+      .then(({ data }) =>
+        data.forEach(({ attributes }) => {
+          element.innerHTML += /* html */ `<div class="swiper-slide news__slide">
                                             <div class="news__img">
                                             <img src='http://localhost:1337${attributes.imgNews.data.attributes.url}' alt="news1">
                                             <div class="news__date">
@@ -25,25 +25,25 @@ class newsDao {
                                             ${attributes.titleNews}
                                         </div>
                                  </div>`;
-                })
-            )
-            .catch(e => {
-                throw new Error(e);
-            });
-    }
+        })
+      )
+      .catch(e => {
+        throw new Error(e);
+      });
+  }
 }
 class hotOfferDao {
-    #url;
-    constructor(url) {
-        this.#url = url;
-    }
+  #url;
+  constructor(url) {
+    this.#url = url;
+  }
 
-    async getData(element) {
-        await fetch(this.#url)
-            .then(response => response.json())
-            .then(({ data }) =>
-                data.forEach(({ attributes }) => {
-                    element.innerHTML += /* html */ `<div class="swiper-slide hot-offer__slide">
+  async getData(element) {
+    await fetch(this.#url)
+      .then(response => response.json())
+      .then(({ data }) =>
+        data.forEach(({ attributes }) => {
+          element.innerHTML += /* html */ `<div class="swiper-slide hot-offer__slide">
                     <div class="hot-offer__img">
                         <img src='http://localhost:1337${attributes.img.data.attributes.url}' alt="offer">
                         <div class="hot-offer__date">
@@ -74,25 +74,25 @@ class hotOfferDao {
                         </div>
                     </div>
                 </div>`;
-                })
-            )
-            .catch(e => {
-                throw new Error(e);
-            });
-    }
+        })
+      )
+      .catch(e => {
+        throw new Error(e);
+      });
+  }
 }
 class winterDao {
-    #url;
-    constructor(url) {
-        this.#url = url;
-    }
+  #url;
+  constructor(url) {
+    this.#url = url;
+  }
 
-    async getData(element) {
-        await fetch(this.#url)
-            .then(response => response.json())
-            .then(({ data }) =>
-                data.forEach(({ attributes }) => {
-                    element.innerHTML += /* html */ `<div class="swiper-slide winter__slide">
+  async getData(element) {
+    await fetch(this.#url)
+      .then(response => response.json())
+      .then(({ data }) =>
+        data.forEach(({ attributes }) => {
+          element.innerHTML += /* html */ `<div class="swiper-slide winter__slide">
                     <div class="winter__img">
                         <img src='http://localhost:1337${attributes.img.data.attributes.url}' alt="winter">
                     </div>
@@ -109,25 +109,25 @@ class winterDao {
                         </div>
                     </div>
                 </div>`;
-                })
-            )
-            .catch(e => {
-                throw new Error(e);
-            });
-    }
+        })
+      )
+      .catch(e => {
+        throw new Error(e);
+      });
+  }
 }
 class summerDao {
-    #url;
-    constructor(url) {
-        this.#url = url;
-    }
+  #url;
+  constructor(url) {
+    this.#url = url;
+  }
 
-    async getData(element) {
-        await fetch(this.#url)
-            .then(response => response.json())
-            .then(({ data }) =>
-                data.forEach(({ attributes }) => {
-                    element.innerHTML += /* html */ `<div class="swiper-slide summer__slide">
+  async getData(element) {
+    await fetch(this.#url)
+      .then(response => response.json())
+      .then(({ data }) =>
+        data.forEach(({ attributes }) => {
+          element.innerHTML += /* html */ `<div class="swiper-slide summer__slide">
                     <div class="summer__img">
                         <img src='http://localhost:1337${attributes.img.data.attributes.url}' alt="summer">
                     </div>
@@ -144,12 +144,12 @@ class summerDao {
                         </div>
                     </div>
                 </div>`;
-                })
-            )
-            .catch(e => {
-                throw new Error(e);
-            });
-    }
+        })
+      )
+      .catch(e => {
+        throw new Error(e);
+      });
+  }
 }
 
 const news = new newsDao('http://localhost:1337/api/newss?populate=deep');

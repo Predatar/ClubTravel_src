@@ -481,6 +481,10 @@ textarea {
 }
 .advancedSearch__star {
   padding: 10px 0px 0px 10px;
+
+  .icon-star_active {
+    color: $color-star;
+  }
 }
 .title4 {
   margin: 48px 0px 46px 0px;

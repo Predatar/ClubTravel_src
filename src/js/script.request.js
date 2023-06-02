@@ -113,17 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const guestModal = document.querySelector('.guest__modal');
-  const guestSelect = document.querySelectorAll('.guest__select');
-  const guestSelected = document.querySelectorAll('.guest__selected');
-  const guestList = document.querySelectorAll('.guest__list');
-  const guestListItem = document.querySelectorAll('.guest__list-item');
-  const guestMinus = document.querySelectorAll('.guest__count .icon-minus-circle');
-  const guestPlus = document.querySelectorAll('.guest__count .icon-plus-circle');
-  const guestCount = document.querySelectorAll('.guest__count-wrapper');
+  const guestMinus = document.querySelector('.guest__count .icon-minus-circle');
+  const guestPlus = document.querySelector('.guest__count .icon-plus-circle');
+  const guestCount = document.querySelector('.guest__count-wrapper');
   const guestAddBtn = document.querySelector('.guest__btn-add');
-
-  const guestRow = document.getElementsByClassName('guest__form-row');
-  const guestRowClose = document.getElementsByClassName('guest__delete');
 
   document.querySelector('.searchBar__guests-selected').addEventListener('click', () => {
     guestModal.classList.toggle('guest__modal_active');
@@ -135,84 +128,109 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  guestSelect.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      if (guestList[index].classList.contains('guest__list_active')) {
-        guestList.forEach(elem => {
-          elem.classList.contains('guest__list_active') ? elem.classList.remove('guest__list_active') : null;
-        });
-      } else {
-        guestList[index].classList.add('guest__list_active');
-      }
-    });
+  guestMinus.addEventListener('click', () => {
+    if (guestCount.innerHTML > 0) {
+      guestCount.innerHTML = -1 + +guestCount.innerHTML;
+    }
   });
 
-  guestList.forEach((elem, index) => {
-    elem.addEventListener('click', ({ target }) => {
-      console.log(target);
-      guestListItem.forEach(elem => {
-        elem.classList.contains('guest__list-item_active') ? elem.classList.remove('guest__list-item_active') : null;
-      });
-      target.classList.add('guest__list-item_active');
-
-      guestSelected[index].childNodes[0].textContent = target.innerHTML;
-    });
+  guestPlus.addEventListener('click', () => {
+    guestCount.innerHTML = 1 + +guestCount.innerHTML;
   });
-
-  guestMinus.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestCount[index].innerHTML = -1 + +guestCount[index].innerHTML;
-    });
-  });
-  guestPlus.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestCount[index].innerHTML = 1 + +guestCount[index].innerHTML;
-    });
-  });
-
-  /* guestRowClose.forEach((elem, index) => {
-    elem.addEventListener('click', () => {
-      guestRow[++index].remove();
-    });
-  }); */
-
-  for (let i = 0; i < guestRowClose.length; i++) {
-    guestRowClose[i].addEventListener('click', () => {
-      guestRow[++i].remove();
-    });
-  }
 
   guestAddBtn.addEventListener('click', () => {
-    document.querySelector('.guest__form').innerHTML += /* html */ `<div class="guest__form-row">
-    <div class="guest__select">
-      <div class="guest__selected">
-        Взрослый
-        <span class="icon-chevron-down"></span>
-      </div>
-      <div class="guest__list">
-        <div class="guest__list-item guest__list-item_active">
-          Взрослый
-        </div>
-      </div>
-    </div>
-    <div class="guest__count guest__count_addition">
-      <span class="icon-minus-circle"></span>
-      <div class="guest__count-wrapper">
-        1
-      </div>
-      <span class="icon-plus-circle"></span>
-    </div>
-    <div class="guest__delete">
-      <span class="icon-close"></span>
-    </div>
-  </div>`;
+    const guestForm = document.querySelector('.guest__form');
 
-    for (let i = 0; i < guestRowClose.length; i++) {
-      guestRowClose[i].addEventListener('click', () => {
-        guestRow[++i].remove();
+    const guestFormRow = document.createElement('div');
+    guestFormRow.classList.add('guest__form-row');
+
+    const guestAddSelect = document.createElement('div');
+    guestAddSelect.classList.add('guest__select');
+    guestAddSelect.addEventListener('click', () => {
+      guestAddSelect.childNodes[1].classList.toggle('guest__list_active');
+    });
+
+    const guestAddSelected = document.createElement('div');
+    guestAddSelected.classList.add('guest__selected');
+    guestAddSelected.innerHTML = 'Взрослый<span class="icon-chevron-down"></span>';
+
+    const guestAddList = document.createElement('div');
+    guestAddList.classList.add('guest__list');
+    guestAddList.innerHTML = /* html */ `<div class="guest__list-item guest__list-item_active">
+      Взрослый
+      </div><div class="guest__list-item">
+      15 лет
+      </div><div class="guest__list-item">
+      12 лет
+      </div>`;
+    guestAddList.addEventListener('click', ({ target }) => {
+      if (target.classList.contains('guest__list-item')) {
+        target.parentNode.childNodes.forEach(elem => {
+          elem.classList.remove('guest__list-item_active');
+        });
+        target.classList.add('guest__list-item_active');
+
+        target.parentNode.parentNode.childNodes[0].childNodes[0].textContent = target.innerHTML;
+      }
+    });
+
+    const guestAddCount = document.createElement('div');
+    guestAddCount.classList.add('guest__count', 'guest__count_addition');
+
+    const iconMinus = document.createElement('span');
+    iconMinus.classList.add('icon-minus-circle');
+    iconMinus.addEventListener('click', () => {
+      if (iconMinus.parentNode.childNodes[1].innerHTML > 0) {
+        iconMinus.parentNode.childNodes[1].innerHTML = -1 + +iconMinus.parentNode.childNodes[1].innerHTML;
+      }
+    });
+
+    const iconPlus = document.createElement('span');
+    iconPlus.classList.add('icon-plus-circle');
+    iconPlus.addEventListener('click', () => {
+      iconPlus.parentNode.childNodes[1].innerHTML = 1 + +iconPlus.parentNode.childNodes[1].innerHTML;
+    });
+
+    const guestCountWrapper = document.createElement('div');
+    guestCountWrapper.classList.add('guest__count-wrapper');
+    guestCountWrapper.innerHTML = '1';
+
+    guestAddCount.appendChild(iconMinus);
+    guestAddCount.appendChild(guestCountWrapper);
+    guestAddCount.appendChild(iconPlus);
+
+    const guestDelete = document.createElement('div');
+    guestDelete.classList.add('guest__delete');
+
+    const iconClose = document.createElement('span');
+    iconClose.classList.add('icon-close');
+    iconClose.addEventListener('click', ({ target }) => {
+      console.log(target.parentNode.parentNode.remove());
+    });
+
+    guestDelete.appendChild(iconClose);
+
+    guestAddSelect.appendChild(guestAddSelected);
+    guestAddSelect.appendChild(guestAddList);
+
+    guestFormRow.appendChild(guestAddSelect);
+    guestFormRow.appendChild(guestAddCount);
+    guestFormRow.appendChild(guestDelete);
+
+    guestForm.appendChild(guestFormRow);
+  });
+
+  const stars = document.querySelectorAll('.advancedSearch__star .icon-star');
+
+  stars.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      console.log('click', index);
+      stars.forEach(elem => {
+        elem.classList.contains('icon-star_active') ? elem.classList.remove('icon-star_active') : null;
       });
-    }
-
-    console.log(guestRow);
+      for (let i = 0; i < elem.getAttribute('data-index'); i++) {
+        stars[i].classList.add('icon-star_active');
+      }
+    });
   });
 });
