@@ -1,146 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Отель - Club Travel</title>
-    @@include('html/head.html', {})
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.nouislider.min.css" />
-    <link rel="stylesheet" href="css/style.hotel.min.css" />
-  </head>
-  <body>
-    @@include('html/header-middle.html', {})
-    <div class="main__container">
-      <div class="container1">
-        <div class="image-group">
-          <img src="img/hotel/image 4.png" alt="Image 1" class="big-image" />
-          <img src="img/hotel/image 5.png" alt="Image 2" class="small-image" />
-          <img src="img/hotel/image 6.png" alt="Image 3" class="small-image" />
-          <img src="img/hotel/image 7.png" alt="Image 4" class="small-image" />
-          <img src="img/hotel/image 8.png" alt="Image 5" class="small-image" />
-        </div>
-        <div class="img-group">
-          <img src="img/hotel/image-hotel-mob (1).png" alt="Image 1" class="big-image" />
-          <img src="img/hotel/image-hotel-mob (2).png" alt="Image 2" class="small-image" />
-          <img src="img/hotel/image-hotel-mob (3).png" alt="Image 3" class="small-image" />
-          <img src="img/hotel/image-hotel-mob (4).png" alt="Image 4" class="small-image" />
-          <img src="img/hotel/image-hotel-mob (5).png" alt="Image 5" class="small-image" />
-        </div>
 
-        <div class="text-block">
-          <h2>Рекомендуем для семейного и молодёжного отдыха.</h2>
-          <p>
-            Гости города Золотые пески, приехавшие в город по делам бизнеса или для отдыха, могут остановиться в
-            гостинце Ambassador (Амбассадор). Отель прекрасно сочетает в себе как современный комфорт, так и высокий
-            уровень обслуживания. Каждый номер оснащен всем необходимым для комфортного отдыха (кондиционер, телевизор,
-            письменный стол, сейф и утренняя газета). Вы сможете воспользоваться услугами массажиста, баром, лифтом,
-            спа, сауной, рестораном, отдохнуть у бассейна, посетить фитнес зал и прогуляться по саду. Ваш отдых в отеле
-            Ambassador (Амбассадор) будет ярким и запоминающимся, вас не оставят равнодушными первоклассный сервис и
-            великолепное обслуживание. Отель находится в 27 км от Международного аэропорта Варна (Varna International
-            Airport), в 900 метрах от центра курорта Золотые пески и в 150 метрах от пляжа. Отель принимает отдыхающих
-            круглый год и является прекрасным местом для отдыха, спорта и развлечений. В бальнеологическом центре
-            «Амбассадор» предлагаются свыше 100 видов услуг: таласотерапия, ванные, массаж, электротерапия,
-            грязелечение, водолечение, акупунктура, медицинская косметика, сауна, открытый и крытый бассейны, фитнес
-            зал, солярий и много других.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отель - Club Travel</title>
+  @@include('html/head.html', {})
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.nouislider.min.css" />
+  <link rel="stylesheet" href="css/style.hotel.min.css" />
+</head>
+
+<body>
+  @@include('html/header-middle.html', {})
+  <div class="main__container">
+    <div class="hotel-banner">
+      <h3 class="hotel-name">AMBASSADOR</h3>
+      <span class="hotel-rating">
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-star"></span>
+        <span class="icon-plus">+</span>
+      </span>
+      <div class="hotel-location">
+        <div class="op">
+          <span class="icon-point"></span>
+        </div>
+        <p>Болгария, Золотые Пески</p>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="image-group">
+        <img src="img/hotel/image 4.png" alt="Image 1" class="big-image" />
+        <img src="img/hotel/image 5.png" alt="Image 2" class="small-image" />
+        <img src="img/hotel/image 6.png" alt="Image 3" class="small-image" />
+        <img src="img/hotel/image 7.png" alt="Image 4" class="small-image" />
+        <img src="img/hotel/image 8.png" alt="Image 5" class="small-image" />
+      </div>
+      <div class="img-group">
+        <img src="img/hotel/image-hotel-mob (1).png" alt="Image 1" class="big-image" />
+        <img src="img/hotel/image-hotel-mob (2).png" alt="Image 2" class="small-image" />
+        <img src="img/hotel/image-hotel-mob (3).png" alt="Image 3" class="small-image" />
+        <img src="img/hotel/image-hotel-mob (4).png" alt="Image 4" class="small-image" />
+        <img src="img/hotel/image-hotel-mob (5).png" alt="Image 5" class="small-image" />
+      </div>
+
+      <div class="text-block">
+        <h2>Рекомендуем для семейного и молодёжного отдыха.</h2>
+        <p>
+          Гости города Золотые пески, приехавшие в город по делам бизнеса или для отдыха, могут остановиться в
+          гостинце Ambassador (Амбассадор). Отель прекрасно сочетает в себе как современный комфорт, так и высокий
+          уровень обслуживания. Каждый номер оснащен всем необходимым для комфортного отдыха (кондиционер, телевизор,
+          письменный стол, сейф и утренняя газета). Вы сможете воспользоваться услугами массажиста, баром, лифтом,
+          спа, сауной, рестораном, отдохнуть у бассейна, посетить фитнес зал и прогуляться по саду. Ваш отдых в отеле
+          Ambassador (Амбассадор) будет ярким и запоминающимся, вас не оставят равнодушными первоклассный сервис и
+          великолепное обслуживание. Отель находится в 27 км от Международного аэропорта Варна (Varna International
+          Airport), в 900 метрах от центра курорта Золотые пески и в 150 метрах от пляжа. Отель принимает отдыхающих
+          круглый год и является прекрасным местом для отдыха, спорта и развлечений. В бальнеологическом центре
+          «Амбассадор» предлагаются свыше 100 видов услуг: таласотерапия, ванные, массаж, электротерапия,
+          грязелечение, водолечение, акупунктура, медицинская косметика, сауна, открытый и крытый бассейны, фитнес
+          зал, солярий и много других.
+        </p>
+      </div>
+
+      <div class="small-info">
+        <div class="info-title1">
+          <h3>Месторасположение</h3>
+          <p class="p1">
+            Гостиница находится в южной части курортного комплекса «Золотые пески» в нескольких минутах ходьбы от
+            моря.
           </p>
         </div>
 
-        <div class="small-info">
-          <div class="info-title1">
-            <h3>Месторасположение</h3>
-            <p class="p1">
-              Гостиница находится в южной части курортного комплекса «Золотые пески» в нескольких минутах ходьбы от
-              моря.
-            </p>
-          </div>
+        <ul class="list-1">
+          <h3 class="info-title2">Рестораны и бары</h3>
+          <li class="list-item">— бары</li>
+          <li>— кафе</li>
+          <li>— рестораны</li>
+        </ul>
 
-          <ul class="list-1">
-            <h3 class="info-title2">Рестораны и бары</h3>
-            <li class="list-item">— бары</li>
-            <li>— кафе</li>
-            <li>— рестораны</li>
-          </ul>
+        <ul class="list-2">
+          <h3 class="info-title3">Пляж</h3>
+          <li class="list-item">— Расстояние до пляжа (60 м.)</li>
+          <li>— Зонтики (платно)</li>
+          <li>— Шезлонги (платно)</li>
+        </ul>
 
-          <ul class="list-2">
-            <h3 class="info-title3">Пляж</h3>
-            <li class="list-item">— Расстояние до пляжа (60 м.)</li>
-            <li>— Зонтики (платно)</li>
-            <li>— Шезлонги (платно)</li>
-          </ul>
+        <ul class="list-3">
+          <h3 class="info-title4">Развлечения и спорт</h3>
+          <li class="list-item">— бассейн крытый</li>
+          <li>— бассейн открытый</li>
+          <li>— массаж</li>
+          <li>— салон красоты</li>
+          <li>— сауна</li>
+          <li>— фитнес центр</li>
+          <li>— велосипеды</li>
+          <li>— прокат</li>
+          <li>— теннис настольный</li>
+        </ul>
 
-          <ul class="list-3">
-            <h3 class="info-title4">Развлечения и спорт</h3>
-            <li class="list-item">— бассейн крытый</li>
-            <li>— бассейн открытый</li>
-            <li>— массаж</li>
-            <li>— салон красоты</li>
-            <li>— сауна</li>
-            <li>— фитнес центр</li>
-            <li>— велосипеды</li>
-            <li>— прокат</li>
-            <li>— теннис настольный</li>
-          </ul>
+        <ul class="list-4">
+          <h3 class="info-title5">Для детей</h3>
+          <li class="list-item">— детская площадка</li>
+          <li>— детский бассейн</li>
+        </ul>
 
-          <ul class="list-4">
-            <h3 class="info-title5">Для детей</h3>
-            <li class="list-item">— детская площадка</li>
-            <li>— детский бассейн</li>
-          </ul>
+        <ul class="list-5">
+          <h3 class="info-title6">Номера</h3>
+          <li class="list-item">— 181 номеров</li>
+          <li>— душ</li>
+          <li>— туалет</li>
+          <li>— умывальник</li>
+          <li>— балкон</li>
+          <li>— ТВ спутниковое</li>
+          <li>— кондиционер</li>
+          <li>— телефон</li>
+          <li>— холодильник</li>
+        </ul>
 
-          <ul class="list-5">
-            <h3 class="info-title6">Номера</h3>
-            <li class="list-item">— 181 номеров</li>
-            <li>— душ</li>
-            <li>— туалет</li>
-            <li>— умывальник</li>
-            <li>— балкон</li>
-            <li>— ТВ спутниковое</li>
-            <li>— кондиционер</li>
-            <li>— телефон</li>
-            <li>— холодильник</li>
-          </ul>
+        <ul class="list-6">
+          <h3 class="info-title7">Сервис</h3>
+          <li class="list-item">— парковка</li>
+          <li>— прокат автомобилей</li>
+          <li>— обмен валют</li>
+          <li>— сейф</li>
+        </ul>
+      </div>
 
-          <ul class="list-6">
-            <h3 class="info-title7">Сервис</h3>
-            <li class="list-item">— парковка</li>
-            <li>— прокат автомобилей</li>
-            <li>— обмен валют</li>
-            <li>— сейф</li>
-          </ul>
+      <div class="image-group3">
+        <img src="img/hotel/Group 1043(mob).png" alt="Image 1" class="" />
+      </div>
+
+      <div class="consultant-block2">
+        <h2 class="question-title">ЕСТЬ ВОПРОСЫ ПО ОТЕЛЮ ИЛИ <span class="price1"> ХОТИТЕ ПОДОБРАТЬ ТУР?</span></h2>
+        <div class="consultant-info">Вам поможет наш консультант <span class="price-1"> Марина Каасик </span></div>
+        <div class="consultant-photo">
+          <img src="img/hotel/Rectangle 117.png" alt="Картинка консультанта" class="consultant-image" />
         </div>
-
-        <div class="image-group3">
-          <img src="img/hotel/Group 1043(mob).png" alt="Image 1" class="" />
-        </div>
-
-        <div class="consultant-block2">
-          <h2 class="question-title">ЕСТЬ ВОПРОСЫ ПО ОТЕЛЮ ИЛИ <span class="price1"> ХОТИТЕ ПОДОБРАТЬ ТУР?</span></h2>
-          <div class="consultant-info">Вам поможет наш консультант <span class="price-1"> Марина Каасик </span></div>
-          <div class="consultant-photo">
-            <img src="img/hotel/Rectangle 117.png" alt="Картинка консультанта" class="consultant-image" />
-          </div>
-          <div class="consultatn-contact">
-            <a href="tel:+3726130633" class="requet__contacts-tel">
-              <span class="icon-phone"></span>
-              +372&nbsp; <span class="price1"> 6 130 633 </span>
-            </a>
-            <a href="mailto:contact@email.ee" class="requet__contacts-mail">
-              <span class="icon-mail"></span>
-              contact@email.ee
-            </a>
-            <a href="#" class="requet__contacts-messenger">
-              <span class="icon-messanger"></span>
-              Написать в Messenger
-            </a>
-            <div class="time">
-              <span class="icon-clock"></span>
-              Пн - Пт<span class="small-space"></span><span class="price1"> 10.00 - 18.00 </span>
-            </div>
+        <div class="consultatn-contact">
+          <a href="tel:+3726130633" class="requet__contacts-tel">
+            <span class="icon-phone"></span>
+            +372&nbsp; <span class="price1"> 6 130 633 </span>
+          </a>
+          <a href="mailto:contact@email.ee" class="requet__contacts-mail">
+            <span class="icon-mail"></span>
+            contact@email.ee
+          </a>
+          <a href="#" class="requet__contacts-messenger">
+            <span class="icon-messanger"></span>
+            Написать в Messenger
+          </a>
+          <div class="time">
+            <span class="icon-clock"></span>
+            Пн - Пт<span class="small-space"></span><span class="price1"> 10.00 - 18.00 </span>
           </div>
         </div>
+      </div>
     </div>
 
     <div class="container2">
@@ -168,7 +186,7 @@
           <div class="searchBar__guests">
             <p class="form-label">Количество отдыхающих</p>
             <div class="searchBar__guests-selected">
-              Взрослых: 2; детей: 5
+              Взрослых: 2
               <span class="icon-chevron-down"></span>
             </div>
             <div class="guest__modal">
@@ -176,18 +194,21 @@
               <div class="guest__form">
                 <div class="guest__form-row">
                   <div class="guest__select">
-                    <div class="guest__selected">
-                      Взрослый
-                    </div>
+                    <div class="guest__selected">Взрослый</div>
                   </div>
                   <div class="guest__count">
                     <span class="icon-minus-circle"></span>
-                    <div class="guest__count-wrapper">1</div>
+                    <div class="guest__count-wrapper">2</div>
                     <span class="icon-plus-circle"></span>
                   </div>
                 </div>
               </div>
               <div class="guest__btn-add">Добавить</div>
+            </div>
+            <div class="filter">
+              <div class="filter__item" data-filter="0">
+                Взрослых x2
+              </div>
             </div>
           </div>
 
@@ -195,17 +216,13 @@
             <p>Общая стоимость тура:<span class="price2"> 1 429€</span></p>
           </div>
 
-          <div class="button">
-            БРОНИРОВАТЬ
-          </div>
+          <div class="button">БРОНИРОВАТЬ</div>
 
           <div class="price_info2">
-              <span class="icon-lock"></span>
-              <p>
-              Ваши данные надежно защищены и обрабатываются согласно с 
-              <span class="data"> условиями
-              обработки личных данных
-              </span>
+            <span class="icon-lock"></span>
+            <p>
+              Ваши данные надежно защищены и обрабатываются согласно с
+              <span class="data"> условиями обработки личных данных </span>
             </p>
           </div>
         </form>
@@ -389,8 +406,7 @@
                 </div>
                 <div class="price-tag">
                   <div class="price">
-                    <span class="price2"><del>779 €/чел</del></span
-                    ><span class="price5">509€</span>/чел
+                    <span class="price2"><del>779 €/чел</del></span><span class="price5">509€</span>/чел
                   </div>
                   <div class="discount-badge">
                     <img class="discount" src="img/hotel/Group 1247.png" alt="discount" />
@@ -423,8 +439,7 @@
                 </div>
                 <div class="price-tag">
                   <div class="price">
-                    <span class="price2"><del>779 €/чел</del></span
-                    ><span class="price5">509€</span>/чел
+                    <span class="price2"><del>779 €/чел</del></span><span class="price5">509€</span>/чел
                   </div>
                   <div class="discount-badge">
                     <img class="discount" src="img/hotel/Group 1247.png" alt="discount" />
@@ -457,8 +472,7 @@
                 </div>
                 <div class="price-tag">
                   <div class="price">
-                    <span class="price2"><del>779 €/чел</del></span
-                    ><span class="price5">509€</span>/чел
+                    <span class="price2"><del>779 €/чел</del></span><span class="price5">509€</span>/чел
                   </div>
                   <div class="discount-badge">
                     <img class="discount" src="img/hotel/Group 1247.png" alt="discount" />
@@ -472,12 +486,14 @@
         </div>
       </div>
     </div>
-    @@include('html/request.html', {}) @@include('html/footer.html', {})
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script.hotel.js"></script>
-    <script src="js/script.header.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/script.searchBar.js"></script>
-    <script src="js/script.index.js"></script>
-  </body>
+  </div>
+  @@include('html/request.html', {}) @@include('html/footer.html', {})
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.hotel.js"></script>
+  <script src="js/script.header.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/script.searchBar.js"></script>
+  <script src="js/script.index.js"></script>
+</body>
+
 </html>
