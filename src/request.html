@@ -83,13 +83,12 @@
             <p class="form-label">Гости</p>
             <div class="searchBar__guests">
               <div class="searchBar__guests-selected">
-                Взрослых: 2; детей: 1
-                <span class="icon-chevron-down"></span>
+                Взрослых: 2<!-- ; детей: 1 --><span class="icon-chevron-down"></span>
               </div>
               <div class="guest__modal">
                 <div class="guest__title">Добавьте необходимое кол-во гостей и укажите возраст</div>
                 <div class="guest__form">
-                  <div class="guest__form-row">
+                  <div class="guest__form-row" data-filter="0">
                     <div class="guest__select">
                       <div class="guest__selected">
                         Взрослый
@@ -97,12 +96,17 @@
                     </div>
                     <div class="guest__count">
                       <span class="icon-minus-circle"></span>
-                      <div class="guest__count-wrapper">1</div>
+                      <div class="guest__count-wrapper">2</div>
                       <span class="icon-plus-circle"></span>
                     </div>
                   </div>
                 </div>
                 <div class="guest__btn-add">Добавить</div>
+              </div>
+            </div>
+            <div class="filter">
+              <div class="filter__item" data-filter="0">
+                Взрослых x2
               </div>
             </div>
           </div>
