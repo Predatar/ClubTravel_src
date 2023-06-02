@@ -390,7 +390,7 @@
   border-top: none;
   padding: 9px 14px 0px 0px;
   right: 1px;
-  margin-bottom: 85px;
+  margin-bottom: 25px;
   @media (max-width: 360px) {
     right: 5px;
     padding: 2px 14px 0px 0;
@@ -1464,5 +1464,33 @@ h3 {
     padding: 9px 14px 0px 0px;
     right: 1px;
     margin-bottom: 85px;
+  }
+}
+
+.filter {
+  margin-top: 8px;
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  &__item {
+    padding: 0 10px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-text
+  }
+
+  @media (max-width: 520px) {
+      width: 293px;
   }
 }

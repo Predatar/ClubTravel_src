@@ -144,7 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (strFilter[i].innerHTML.split(' ')[0] == 'Взрослых') {
         adultCounter += +strFilter[i].innerHTML.split(' ')[1].split('')[1];
       } else {
-        childCounter += +strFilter[i].innerHTML.split(' ')[2].split('')[1];
+        console.log(strFilter[i].innerHTML);
+        let word = strFilter[i].innerHTML.trim().split(' ');
+        word = word[word.length - 1].split('');
+        childCounter += +word[1];
       }
     }
 
@@ -259,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
         target.parentNode.parentNode.childNodes[0].childNodes[0].textContent = target.innerHTML;
 
         updateFilter({ elem: target });
+        updateSearchBarGuestsSelected();
       }
     });
 
@@ -299,6 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     iconClose.addEventListener('click', ({ target }) => {
       target.parentNode.parentNode.remove();
       deleteFiter(target);
+      updateSearchBarGuestsSelected();
     });
 
     guestDelete.appendChild(iconClose);
