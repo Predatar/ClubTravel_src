@@ -20,6 +20,7 @@
     height: 50%;
     top: -28px;
     right: 25px;
+    margin-bottom: 26px;
     @media (max-width: 425px) {
       right: 0;
     }
@@ -43,6 +44,7 @@
       }
     }
     p {
+      margin-bottom: 17px;
       text-align: left;
       left: 25%;
       right: 83.16%;
@@ -131,7 +133,7 @@ form {
   font-size: 16px;
   width: 50%;
   white-space: nowrap;
-  top: -27px;
+  top: -28px;
   right: 11px;
   @media (max-width: 425px) {
     width: 100%;
@@ -148,19 +150,19 @@ form {
     text-align: left;
     left: 24%;
     right: 83.16%;
-    top: -13px;
+    top: -14px;
     bottom: 72.09%;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    margin: 0 0 16px 0;
-    color: #222222;
+    margin: 0 0 19px 0;
+    color: #222;
+
     @media (max-width: 425px) {
       left: 0px;
       right: 0px;
-      margin: 0 0 15px 0;
+      margin: 0 0 19px 0;
     }
   }
   .tel {
@@ -174,7 +176,7 @@ form {
     margin: 0px 0 28px 0;
   }
   .day {
-    margin: 0 0 23px 0px;
+    margin: 0 0 18px 0px;
     @media (max-width: 425px) {
       margin: 0 0 21px 0;
     }
@@ -189,9 +191,9 @@ form {
   }
   p {
     text-align: left;
-    left: 25%;
+    left: 24%;
     right: 83.16%;
-    top: 4px;
+    top: -2px;
     bottom: 72.09%;
 
     font-family: 'Open Sans';
@@ -298,8 +300,6 @@ input[type='submit']:hover {
 .contact-form {
   margin-right: 100px;
   background-color: #ffffff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   top: -50px;
 
   @media (max-width: 1024px) {
@@ -408,7 +408,7 @@ input[type='submit']:hover {
     margin-left: 93px;
   }
   .footer {
-    top: -143px;
+    top: -150px;
   }
   .footer__contacts {
     padding-left: 20px;
@@ -456,7 +456,7 @@ input[type='submit']:hover {
     padding: 22px 4px 5px 12px;
   }
   .contact-form {
-    top: 3px;
+    top: -3px;
   }
   .contact-form input {
     margin-top: 7px;
@@ -478,6 +478,12 @@ input[type='submit']:hover {
     padding: 40px 0 0 18px;
   }
   .footer {
-    top: 120px;
+    top: 115px;
   }
+}
+.contact__info__text p {
+  margin-bottom: 17px;
+}
+.contact-details .point {
+  // top: -8px;
 }
