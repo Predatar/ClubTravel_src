@@ -11,6 +11,82 @@
 .main__container {
   margin: 0 77px 0 97px;
 }
+.hotel-banner {
+  position: absolute;
+  left: 1px;
+  top: -125px;
+  width: 304px;
+  height: 85px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hotel-info {
+  flex-grow: 1;
+  padding: 0px 0 0 17px;
+}
+
+.hotel-name {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+
+  color: #222222;
+  padding: 10px 0px 0px 19px;
+}
+
+.hotel-location {
+  display: flex;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #222222;
+  margin: 0px 0px 10px 17px;
+}
+.icon-point {
+  margin-right: 6px;
+  color: #3e7739;
+  font-size: 15px;
+}
+.op {
+  opacity: 0.5;
+  @media (max-width: 360px) {
+    top: 2px;
+  }
+}
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  margin: 0 6px 0px 0px;
+}
+
+.icon-star {
+  height: 20px;
+  color: #f5c213;
+  padding: 0px 2px 0px 4px;
+  @media (max-width: 360px) {
+    padding: 0 3px 0 4px;
+  }
+}
+
+.icon-plus {
+  font-size: 18px;
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+  color: #f5c213;
+  margin: 0 0px 15px 1px;
+}
 .image-group,
 .image-group2 {
   height: 685px;
@@ -38,16 +114,16 @@
 }
 .form-placeholder {
   width: 371px;
-  height: 666px;
-  top: -5px;
+  height: 692px;
+  top: -29px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 0 22px 0px 26px;
+  padding: 24px 22px 24px 26px;
   @media (max-width: 360px) {
     padding: 29px 16px 0 21px;
     top: 0px;
-    height: 692px;
+    height: 690px;
   }
 }
 .form-header {
@@ -406,8 +482,6 @@
 .text-block {
   width: 735px;
   height: 320px;
-  // right: 1px;
-
   h2 {
     width: 466px;
     font-family: 'Open Sans';
@@ -431,6 +505,7 @@
 }
 
 .image-group2 {
+  top: 14px;
   right: 1px;
   margin: 5px 0px 38px 0px;
 
@@ -495,6 +570,9 @@
   line-height: 19px;
 
   color: #555555;
+  @media (max-width: 360px) {
+    padding: 17px 0 0 0;
+  }
 }
 ul {
   list-style-type: none;
@@ -525,7 +603,7 @@ h3 {
 }
 
 .consultant-block {
-  margin-top: 49px;
+  margin-top: 23px;
   width: 371px;
   height: 500px;
   background: #ffffff;
@@ -688,6 +766,7 @@ h3 {
 }
 
 .col {
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -718,7 +797,7 @@ h3 {
       position: absolute;
       width: 150px;
       height: 28px;
-      left: 14px;
+      left: 15px;
       top: 167px;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.5);
@@ -741,7 +820,7 @@ h3 {
       position: absolute;
       width: 208px;
       height: 29px;
-      left: 14px;
+      left: 15px;
       top: 207px;
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.5);
@@ -765,11 +844,14 @@ h3 {
     }
   }
   .caption-star {
-    padding-right: 28px;
+    padding-right: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    @media (min-width: 360px) {
+      padding: 1px 29px 0px 0px;
+    }
 
     .caption {
       padding: 12px 0 0 17px;
@@ -779,6 +861,9 @@ h3 {
       font-size: 16px;
       line-height: 22px;
       color: #222222;
+      @media (min-width: 360px) {
+        padding: 13px 0 0 21px;
+      }
     }
 
     .advancedSearch__star {
@@ -805,6 +890,7 @@ h3 {
     font-size: 14px;
     line-height: 19px;
     color: #bfbfbf;
+    padding: 5px;
   }
   .price {
     padding: 10px 0 0 17px;
@@ -815,8 +901,11 @@ h3 {
   }
 
   .discount-badge {
-    padding: 16px 13px 0 0;
+    padding: 16px 0px 0 0;
     color: #f5c213;
+    @media (min-width: 360px) {
+      padding: 16px 13px 0px 0px;
+    }
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1195,83 +1284,23 @@ h3 {
     order: 5;
   }
 }
-.hotel-banner {
-  position: absolute;
-  left: 1px;
-  top: -125px;
-  width: 304px;
-  height: 85px;
-  background: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.hotel-info {
-  flex-grow: 1;
-  padding: 0px 0 0 17px;
-}
-
-.hotel-name {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 35px;
-
-  color: #222222;
-  padding: 10px 0px 0px 19px;
-}
-
-.hotel-location {
-  display: flex;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-
-  color: #222222;
-  margin: 0px 0px 10px 17px;
-}
-.icon-point {
-  margin-right: 6px;
-  color: #3e7739;
-  opacity: 0.5;
-  font-size: 15px;
-}
-
-.hotel-rating {
-  display: flex;
-  align-items: center;
-  margin: 0 4px 0px 0px;
-}
-
-.icon-star {
-  width: 20px;
-  height: 20px;
-  margin: 0 0 0 2px;
-  color: #f5c213;
-}
-
-.icon-plus {
-  font-size: 18px;
-  font-weight: 900;
-  width: 20px;
-  height: 20px;
-  color: #f5c213;
-  margin: 0px 1px 15px 0px;
-}
 
 @media (max-width: 360px) {
+  .col .price2 {
+    padding: 5px 1px 0px 8px;
+  }
+  .info-title1 {
+    padding: 1px 0 0 0;
+  }
+  .discount-badge {
+    padding: 16px 13px 0 0;
+    color: #f5c213;
+  }
   .hotel-banner {
     width: 300px;
     height: 74px;
     left: 18px;
-    top: -91px;
+    top: -92px;
   }
   .hotel-location {
     top: -3px;
@@ -1319,7 +1348,7 @@ h3 {
   }
   .text-block {
     height: 700px;
-    padding: 0 23px 0 17px;
+    padding: 2px 23px 0 17px;
   }
   .list-1,
   .list-3,
@@ -1332,7 +1361,7 @@ h3 {
     padding-top: 33px;
   }
   .small-info {
-    padding: 22px 16px 1px 17px;
+    padding: 21px 16px 1px 17px;
   }
   .image-group3 {
     padding: 61px 16px 0 0;
@@ -1378,7 +1407,7 @@ h3 {
     height: 250px;
   }
   .col .price {
-    padding: 10px 0 0 22px;
+    padding: 10px 0 0 13px;
   }
   .price5 {
     padding: 0 0 0 9px;
@@ -1392,6 +1421,37 @@ h3 {
       padding: 88px 0 0 12px;
     }
     &__time {
+      margin-top: 21px;
+      span {
+        padding-right: 13px;
+      }
+    }
+    &__point {
+      padding-right: 10px;
+    }
+    &__plase {
+      margin-top: 24px;
+      span {
+        padding-right: 10px;
+      }
+    }
+    &__tel {
+      padding: 2px 0px 0 3px;
+      span {
+        padding: 1px 0 0 1px;
+      }
+    }
+    &__email {
+      margin-top: 27px;
+      padding: 0 0 0 2px;
+      span {
+        padding-right: 0px;
+      }
+    }
+    &__contacts {
+      margin-top: 36px;
+      padding-left: 5px;
+      padding-right: 0px;
     }
   }
 }
