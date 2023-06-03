@@ -1,51 +1,72 @@
 @import 'base/variable';
 
 @import 'base/header';
-@import 'base/searchBar';
 
-body {
-  text-align: center;
-  .main {
-    padding: 70px 233px 0 233px;
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+      padding: 0 62px; 
   }
 
-  h1 {
-    padding: 0 0 31px 0;
+  @media (max-width: 768px) {
+      padding: 0 25px;
+  }
+
+  @media (max-width: 425px) {
+      padding: 0 10px;
+  }
+}
+.header__navigation {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  width: 900px;
+
+  @media (max-width: 1024px) {
+      width: 100%;
+  }
+
+  &__title {
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
-
     text-align: center;
-
-    color: #222222;
+    color: $color-text;
   }
 
-  h2 {
-    text-align: left;
-    padding: 0 0 17px 0;
+  &__subtitle {
+    margin-top: 32px;
+
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-
-    color: #222222;
+    color: $color-text;
   }
 
-  p {
+  &__descr1,
+  &__descr2,
+  &__descr3 {
+    margin-top: 16px;
+
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-
-    color: #222222;
+    color: $color-text;
   }
-  .text-info {
-    font-size: 16px;
-    color: #666;
-    white-space: pre-line;
+  &__descr2 {
+    margin-top: 32px;
+  }
+  &__descr3 {
+    margin-top: 32px;
   }
 }
+
+@import 'base/footer';
