@@ -394,6 +394,7 @@
   @media (max-width: 360px) {
     right: 5px;
     padding: 2px 14px 0px 0;
+    margin-bottom: 55px;
   }
 }
 .searchBar__guests-selected {
@@ -421,10 +422,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-
+  padding-top: 30px;
   color: #222222;
   @media (max-width: 360px) {
     right: 5px;
+    padding: 0;
   }
 }
 .button {
@@ -454,8 +456,6 @@
   align-items: flex-start;
   margin: 17px 0 0 3px;
   width: 329px;
-  @media (max-width: 360px) {
-  }
 }
 
 .price_info2 p {
@@ -467,8 +467,6 @@
   line-height: 16px;
 
   color: #999999;
-  @media (max-width: 360px) {
-  }
 }
 
 .price_info2 .icon-lock {
@@ -849,7 +847,7 @@ h3 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    @media (min-width: 360px) {
+    @media (max-width: 360px) {
       padding: 1px 29px 0px 0px;
     }
 
@@ -861,7 +859,7 @@ h3 {
       font-size: 16px;
       line-height: 22px;
       color: #222222;
-      @media (min-width: 360px) {
+      @media (max-width: 360px) {
         padding: 13px 0 0 21px;
       }
     }
@@ -903,7 +901,7 @@ h3 {
   .discount-badge {
     padding: 16px 0px 0 0;
     color: #f5c213;
-    @media (min-width: 360px) {
+    @media (max-width: 360px) {
       padding: 16px 13px 0px 0px;
     }
   }
@@ -1286,6 +1284,9 @@ h3 {
 }
 
 @media (max-width: 360px) {
+  .col .discount-badge {
+    padding: 16px 13px 0 0;
+  }
   .col .price2 {
     padding: 5px 1px 0px 8px;
   }
@@ -1313,7 +1314,7 @@ h3 {
   }
   .img-group {
     display: block;
-    top: 30px;
+    top: 32px;
     height: 325px;
     width: 325px;
   }
@@ -1487,10 +1488,10 @@ h3 {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: $color-text
+    color: $color-text;
   }
 
   @media (max-width: 520px) {
-      width: 293px;
+    width: 293px;
   }
 }
