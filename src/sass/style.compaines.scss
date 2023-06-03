@@ -135,9 +135,17 @@ h2 {
 @media (max-width: 360px) {
   .col-2 {
     margin-bottom: -8px;
+    width: 319px;
   }
   .col {
     margin-bottom: -6px;
+    width: 319px;
+  }
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6 {
+    width: 319px;
   }
 }
 .icon-clock {
@@ -183,7 +191,7 @@ h2 {
     top: 208px;
     bottom: 30.63%;
     width: 121px;
-    left: 10px;
+    left: 8px;
     height: 31px;
   }
   @media (max-width: 330px) {
@@ -241,7 +249,9 @@ h2 {
   }
 }
 .caption,
-.caption1 {
+.caption1,
+.caption3,
+.caption4 {
   position: absolute;
   left: 24px;
   right: 40.82%;
@@ -261,9 +271,18 @@ h2 {
 @media (max-width: 360px) {
   .caption {
     top: 268px;
+    left: 17px;
   }
   .caption1 {
     top: 270px;
+    left: 17px;
+  }
+  .caption3 {
+    top: 267px;
+    left: 17px;
+  }
+  .caption4 {
+    left: 17px;
   }
 }
 
@@ -316,7 +335,39 @@ h2 {
     margin-top: -10px;
   }
   .footer__container {
-    padding: 41px 0 0 18px;
+    padding: 42px 0 0 18px;
+  }
+  .footer__contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__contacts-title {
+    padding-left: 5px;
+  }
+  .footer__contacts-subtitle {
+    padding-left: 5px;
+  }
+  .footer__time {
+    margin-top: 21px;
+  }
+  .footer__time span {
+    padding-right: 21px;
+  }
+  .footer__place {
+    margin-top: 24px;
+  }
+  .footer__place span {
+    padding-right: 14px;
+    margin: 0 0 0px 7px;
+  }
+  .footer__tel {
+    margin-top: 28px;
+  }
+  .footer__tel span {
+    padding: 1px 15px 0px 8px;
+  }
+  .footer__email span {
+    padding: 0 14px 0 7px;
   }
 }
 @media (max-width: 1366px) {
@@ -335,9 +386,6 @@ h2 {
   }
   .footer__place span {
     margin: 0 0px 2px 3px;
-  }
-  .footer__contacts {
-    padding-left: 11px;
   }
 }
 @import 'base/footer';
