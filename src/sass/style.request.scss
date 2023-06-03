@@ -16,6 +16,9 @@ body {
     width: 900px;
     margin-bottom: 40px;
   }
+  @media (max-width: 360px) {
+    padding-top: 9px;
+  }
 }
 .data-block {
   @media (max-width: 1090px) {
@@ -439,7 +442,9 @@ textarea {
   outline: none;
   cursor: pointer;
 }
-
+.change-link {
+  cursor: pointer;
+}
 .number-input .icon-minus-circle,
 .number-input .icon-plus-circle {
   color: #f68521;
@@ -1114,11 +1119,11 @@ select#direction-select option.indent {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: $color-text
+    color: $color-text;
   }
 
   @media (max-width: 520px) {
-      width: 293px;
+    width: 293px;
   }
 }
 
