@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "winter_tours",
+  "info": {
+    "singularName": "winter-tour",
+    "pluralName": "winter-tours",
+    "displayName": "winter-tour"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "place": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

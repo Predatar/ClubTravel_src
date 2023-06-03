@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "club_users",
+  "info": {
+    "singularName": "club-user",
+    "pluralName": "club-users",
+    "displayName": "club-user"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}
