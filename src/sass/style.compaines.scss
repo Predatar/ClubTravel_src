@@ -16,11 +16,12 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    right: 1px;
   }
   @media (max-width: 425px) {
     .color-word1 {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       margin-right: 12px;
     }
   }
@@ -92,8 +93,8 @@ h2 {
       flex-direction: column;
       order: -1;
       position: relative;
-      top: -65px;
-      right: -110px;
+      top: -64px;
+      right: -107px;
     }
   }
 }
@@ -106,6 +107,7 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(200px, auto);
   gap: 23px;
+  left: 1px;
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(300px, auto);
@@ -115,14 +117,28 @@ h2 {
     grid-auto-rows: minmax(300px, auto);
   }
 }
-.col {
+.col,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 10%); // тень
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 10%);
   border-radius: 11px;
+  width: 380px;
+}
+@media (max-width: 360px) {
+  .col-2 {
+    margin-bottom: -8px;
+  }
+  .col {
+    margin-bottom: -6px;
+  }
 }
 .icon-clock {
   content: '\e907';
@@ -132,7 +148,12 @@ h2 {
   justify-content: left;
   color: white;
 }
-.date {
+.date,
+.date-2,
+.date-3,
+.date-4,
+.date-5,
+.date-6 {
   display: flex;
   position: absolute;
   color: #ffffff;
@@ -159,28 +180,28 @@ h2 {
     bottom: 30.63%;
   }
   @media (max-width: 360px) {
-    top: 200px;
+    top: 208px;
     bottom: 30.63%;
-    width: 135px;
+    width: 121px;
+    left: 10px;
+    height: 31px;
   }
   @media (max-width: 330px) {
     top: 50%;
     bottom: 30.63%;
   }
 }
+@media (max-width: 360px) {
+  .date-2 {
+    top: 205px;
+  }
+}
 
 .price-tag {
   position: absolute;
   right: 0px;
-  top: 29px;
-  background-color: $color-primary;
-  color: white;
-  padding: 5px 10px;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  top: 30px;
+
   @media (max-width: 360px) {
     top: 24px;
     padding: 5px 5px;
@@ -191,17 +212,40 @@ h2 {
   display: block;
   margin-bottom: 80px;
   @media (max-width: 360px) {
-    margin-bottom: 71px;
+    margin-bottom: 44px;
     width: 100%;
     height: 253px;
   }
 }
-
-.caption {
+.price-tag2,
+.price-tag-2,
+.price-tag-3,
+.price-tag-4,
+.price-tag-5,
+.price-tag-6 {
+  display: none;
+}
+@media (max-width: 360px) {
+  .price-tag2,
+  .price-tag-2,
+  .price-tag-3,
+  .price-tag-4,
+  .price-tag-5,
+  .price-tag-6 {
+    display: block;
+    right: -124px;
+    top: -265px;
+  }
+  .price-tag {
+    display: none;
+  }
+}
+.caption,
+.caption1 {
   position: absolute;
-  left: 5.71%;
-  right: 37.82%;
-  top: 80%;
+  left: 24px;
+  right: 40.82%;
+  top: 267px;
   bottom: 12.16%;
   font-weight: 400;
   line-height: 150%;
@@ -211,8 +255,89 @@ h2 {
   white-space: nowrap;
   margin-bottom: 80px;
 }
+.caption {
+  top: 265px;
+}
+@media (max-width: 360px) {
+  .caption {
+    top: 268px;
+  }
+  .caption1 {
+    top: 270px;
+  }
+}
+
 .image-container {
   position: relative;
   display: inline-block;
+}
+
+@media (max-width: 360px) {
+  .date {
+    top: 207px;
+  }
+  .date-2 {
+  }
+  .date-3 {
+    top: 204px;
+  }
+  .date-4 {
+    top: 207px;
+  }
+  .date-5 {
+    top: 205px;
+  }
+  .date-6 {
+    top: 206px;
+  }
+  .price-tag2 {
+  }
+  .price-tag-2 {
+    top: -267px;
+  }
+  .price-tag-3 {
+    top: -268px;
+  }
+  .price-tag-4 {
+  }
+  .price-tag-5 {
+    top: -267px;
+  }
+  .price-tag-6 {
+    top: -266px;
+  }
+  .col-4 {
+    margin-top: -10px;
+  }
+  .col-5 {
+    margin-top: -7px;
+  }
+  .col-6 {
+    margin-top: -10px;
+  }
+  .footer__container {
+    padding: 41px 0 0 18px;
+  }
+}
+@media (max-width: 1366px) {
+  .date-4,
+  .date-5,
+  .date-6 {
+    bottom: 97px;
+  }
+  .footer__place span,
+  .footer__time span {
+    padding-right: 22px;
+    color: #3e7739;
+    font-size: 20px;
+    opacity: 0.5;
+    margin: 0px 12px 2px 3px;
+  }
+  .footer__place span {
+    margin: 0 0px 2px 3px;
+  }
+  .footer__contacts {
+    padding-left: 11px;
+  }
 }
 @import 'base/footer';

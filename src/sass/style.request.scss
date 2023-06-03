@@ -16,6 +16,9 @@ body {
     width: 900px;
     margin-bottom: 40px;
   }
+  @media (max-width: 360px) {
+    padding-top: 9px;
+  }
 }
 .data-block {
   @media (max-width: 1090px) {
