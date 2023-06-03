@@ -401,11 +401,11 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  padding: 11px 0 11px 14px;
+  padding: 10px 0 10px 11px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 19px;
 
   color: #222222;
@@ -441,6 +441,7 @@ textarea {
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0 5px;
 }
 .change-link {
   cursor: pointer;
@@ -492,7 +493,7 @@ textarea {
   }
 }
 .title4 {
-  margin: 24px 0px 46px 0px;
+  margin: 29px 0 47px 0;
 }
 .title5 {
   margin: 0px 0px 31px 0px;
@@ -516,7 +517,12 @@ select#direction-select option.indent {
   align-items: center;
   -webkit-box-pack: center;
   margin-bottom: 10px;
-  padding: 10px 0 20px 10px;
+  padding: 10px 0 18px 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 .searchBar__guests-selected {
   width: 100%;
@@ -729,6 +735,7 @@ select#direction-select option.indent {
   textarea {
     width: 290px;
     margin: 0px 0px 10px 3px;
+    padding: 1px 0 0 8px;
   }
   .button-next {
     width: 290px;
@@ -833,18 +840,34 @@ select#direction-select option.indent {
   .col-lg-5 {
     width: 100%;
   }
-
+  .button-next {
+    background-color: #f68521;
+    color: white;
+  }
+  .filter {
+    margin: 0px 0px 2px -1px;
+    top: -2px;
+    height: 19px;
+  }
   .searchBar__guests {
-    margin: 0px 0px 10px 3px;
+    height: 42px;
+    margin: 6px 0 11px 3px;
+    padding: 15px 3px 0 11px;
+  }
+  .title {
+    padding: 0 0px 0px 5px;
+  }
+  .title1 {
+    margin: 27px 0 0;
   }
   .title4 {
-    margin: 40px 0 0 2px;
+    margin: 25px 0 0 2px;
   }
   .number-input {
     margin-left: 2px;
   }
   .title-b {
-    margin: 26px 0px 15px 4px;
+    margin: 27px 0px 15px 4px;
   }
   .contact-form h2 {
     line-height: 1;
@@ -852,7 +875,7 @@ select#direction-select option.indent {
     padding: 0 0 0 5px;
   }
   .contact-form .p1 {
-    padding: 39px 0 0px 5px;
+    padding: 40px 0 0px 5px;
     line-height: 23px;
   }
   .contact-form .p2 {
@@ -1107,7 +1130,7 @@ select#direction-select option.indent {
   gap: 8px;
   &__item {
     padding: 0 10px;
-    height: 22px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1124,6 +1147,42 @@ select#direction-select option.indent {
 
   @media (max-width: 520px) {
     width: 293px;
+  }
+}
+@media (max-width: 360px) {
+  .footer__contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__contacts-title {
+    padding-left: 5px;
+  }
+  .footer__contacts-subtitle {
+    padding-left: 5px;
+  }
+  .footer__time {
+    margin-top: 21px;
+  }
+  .footer__time span {
+    // padding-right: 21px;
+    padding-right: 13px;
+    padding-left: 7px;
+  }
+  .footer__place {
+    margin-top: 24px;
+  }
+  .footer__place span {
+    padding-right: 14px;
+    margin: 0 0 0px 7px;
+  }
+  .footer__tel {
+    margin-top: 28px;
+  }
+  .footer__tel span {
+    padding: 1px 15px 0px 8px;
+  }
+  .footer__email span {
+    padding: 0 14px 0 7px;
   }
 }
 
